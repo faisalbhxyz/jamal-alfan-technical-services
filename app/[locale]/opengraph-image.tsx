@@ -10,8 +10,9 @@ export default async function OpenGraphImage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  const slogan = locale === "ar" ? SITE.sloganAr : SITE.sloganEn;
+  await params;
+  // next/og (Satori) crashes on Arabic GSUB lookupType 5 / substFormat 3 during prerender.
+  const slogan = SITE.sloganEn;
 
   return new ImageResponse(
     (

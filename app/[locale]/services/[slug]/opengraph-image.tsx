@@ -1,7 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getService, SITE } from "@/lib/content";
 import { LOCALES } from "@/lib/types";
-import { parseLocale } from "@/lib/utils";
 
 export const alt = `${SITE.shortName} technical services`;
 export const size = { width: 1200, height: 630 };
@@ -25,11 +24,11 @@ export default async function OpenGraphImage({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { locale: raw, slug } = await params;
-  const locale = parseLocale(raw);
+  const { slug } = await params;
   const service = getService(slug);
-  const title = service?.h1[locale] ?? SITE.name;
-  const label = locale === "ar" ? "خدمات فنية · دبي، الإمارات" : "Technical services · Dubai, UAE";
+  // next/og (Satori) crashes on Arabic GSUB lookupType 5 / substFormat 3 during prerender.
+  const title = service?.h1.en ?? SITE.name;
+  const label = "Technical services · Dubai, UAE";
 
   return new ImageResponse(
     (
