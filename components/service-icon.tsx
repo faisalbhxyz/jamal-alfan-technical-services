@@ -1,6 +1,7 @@
 import type { Service } from "@/lib/types";
 import {
   Bath,
+  BrickWall,
   Brush,
   Cable,
   Layers,
@@ -16,6 +17,7 @@ const ICONS: Record<Service["icon"], LucideIcon> = {
   gypsum: Layers,
   bathroom: Bath,
   plumbing: Wrench,
+  interlock: BrickWall,
 };
 
 interface ServiceIconProps {

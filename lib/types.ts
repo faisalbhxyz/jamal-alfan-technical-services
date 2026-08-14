@@ -31,7 +31,7 @@ export interface ServiceStep {
 
 export interface Service {
   slug: string;
-  icon: "electrical" | "painting" | "interior" | "gypsum" | "bathroom" | "plumbing";
+  icon: "electrical" | "painting" | "interior" | "gypsum" | "bathroom" | "plumbing" | "interlock";
   image: string;
   imageAlt: Localized<string>;
   title: Localized<string>;
@@ -46,6 +46,13 @@ export interface Service {
   process: ServiceStep[];
   faqs: FaqItem[];
   keywords: Localized<string[]>;
+}
+
+export interface FieldWorkShot {
+  slug: string;
+  image: string;
+  imageAlt: Localized<string>;
+  layout: "featured" | "tile" | "wide" | "half";
 }
 
 export interface Project {

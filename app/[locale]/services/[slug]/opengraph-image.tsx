@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { getService, SITE } from "@/lib/content";
+import { getService, SERVICES, SITE } from "@/lib/content";
 import { LOCALES } from "@/lib/types";
 
 export const alt = `${SITE.shortName} technical services`;
@@ -8,14 +8,7 @@ export const contentType = "image/png";
 
 export function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
-    [
-      "electrical-works",
-      "painting-services",
-      "interior-decor",
-      "gypsum-ceiling-works",
-      "tile-bathroom-work",
-      "plumbing",
-    ].map((slug) => ({ locale, slug })),
+    SERVICES.map((service) => ({ locale, slug: service.slug })),
   );
 }
 

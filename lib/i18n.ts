@@ -4,27 +4,27 @@ import { SITE } from "@/lib/content";
 export const dictionaries = {
   en: {
     meta: {
-      homeTitle: "Technical Services in Dubai, UAE | Electrical, Painting, Gypsum & Plumbing",
+      homeTitle: "Technical Services in Dubai, UAE | Electrical, Painting, Gypsum, Plumbing & Interlock",
       homeDescription:
-        "Jamal Alfan Technical Services Co. — electrical works, villa painting, interior decor, gypsum ceilings, bathroom tiling, and plumbing in Dubai Marina, Jumeirah, Arabian Ranches, Abu Dhabi, Sharjah, and across the UAE. You dream it, we build it.",
-      servicesTitle: "Technical Services in Dubai | Electrical, Painting, Interiors & Plumbing",
+        "Jamal Alfan Technical Services Co. — electrical works, villa painting, interior decor, gypsum ceilings, bathroom tiling, plumbing, and interlock in Dubai Marina, Jumeirah, Arabian Ranches, Abu Dhabi, Sharjah, and across the UAE. You dream it, we build it.",
+      servicesTitle: "Technical Services in Dubai | Electrical, Painting, Interiors, Plumbing & Interlock",
       servicesDescription:
-        "Hire one Dubai contractor for electrical works, painting, interior decor, gypsum ceilings, tile and bathroom work, and plumbing — villas and buildings in Dubai, Abu Dhabi, and Sharjah, and across the UAE.",
+        "Hire one Dubai contractor for electrical works, painting, interior decor, gypsum ceilings, tile and bathroom work, plumbing, and interlock — villas and buildings in Dubai, Abu Dhabi, and Sharjah, and across the UAE.",
       projectsTitle: "Dubai Villa & Building Projects | Jamal Alfan",
       projectsDescription:
-        "Selected villa majlis, bathroom, ceiling, painting, electrical, and plumbing projects by Jamal Alfan Technical Services Co. across Dubai and the UAE.",
+        "Selected villa majlis, bathroom, ceiling, painting, electrical, plumbing, and interlock projects by Jamal Alfan Technical Services Co. across Dubai and the UAE.",
       aboutTitle: "About Jamal Alfan | Technical Contractor in Dubai, UAE",
       aboutDescription:
-        "Jamal Alfan Technical Services Co. is a Dubai technical contractor for villa and building finishing — electrical, paint, gypsum, interiors, bathrooms, and plumbing across the UAE.",
+        "Jamal Alfan Technical Services Co. is a Dubai technical contractor for villa and building finishing — electrical, paint, gypsum, interiors, bathrooms, plumbing, and interlock across the UAE.",
       contactTitle: "Contact Jamal Alfan | Quote in Dubai, UAE",
       contactDescription:
         "Call 054 458 2595 or 050 247 1185, WhatsApp a villa or building brief, or request a quote. Jamal Alfan Technical Services Co. serves Dubai, Abu Dhabi, Sharjah, and the wider UAE.",
       quoteTitle: "Request a Quote | Technical Services Dubai, UAE",
       quoteDescription:
-        "Get a quote for electrical, painting, gypsum, bathrooms, or plumbing on your villa or building in Dubai, UAE. Jamal Alfan replies within 24 hours on working days.",
+        "Get a quote for electrical, painting, gypsum, bathrooms, plumbing, or interlock on your villa or building in Dubai, UAE. Jamal Alfan replies within 24 hours on working days.",
       coverageTitle: "Service Areas in Dubai & UAE | Marina, Jumeirah, Abu Dhabi & More",
       coverageDescription:
-        "Jamal Alfan Technical Services Co. covers Dubai Marina, Downtown, Jumeirah, Palm Jumeirah, Arabian Ranches, Dubai Hills, Abu Dhabi, Sharjah, Ajman, and Al Ain for electrical, painting, interiors, gypsum, tiling, and plumbing.",
+        "Jamal Alfan Technical Services Co. covers Dubai Marina, Downtown, Jumeirah, Palm Jumeirah, Arabian Ranches, Dubai Hills, Abu Dhabi, Sharjah, Ajman, and Al Ain for electrical, painting, interiors, gypsum, tiling, plumbing, and interlock.",
     },
     topbar: {
       call: "Call",
@@ -40,7 +40,7 @@ export const dictionaries = {
       eyebrow: "Technical services · Dubai, UAE",
       line1: "You Dream It",
       line2: "We Build It",
-      body: "Electrical, painting, interiors, gypsum ceilings, bathrooms, and plumbing for villas and buildings in Dubai Marina, Jumeirah, Arabian Ranches, Abu Dhabi, and Sharjah — finished to a standard you can live with, not just photograph.",
+      body: "Electrical, painting, interiors, gypsum ceilings, bathrooms, plumbing, and interlock for villas and buildings in Dubai Marina, Jumeirah, Arabian Ranches, Abu Dhabi, and Sharjah — finished to a standard you can live with, not just photograph.",
       ctaQuote: "Get A Quote",
       ctaCall: "Call Now",
       ctaWhatsapp: "WhatsApp",
@@ -48,7 +48,7 @@ export const dictionaries = {
     },
     stats: {
       years: { value: "10+", label: "Years of site work" },
-      trades: { value: "6", label: "Core trades on one team" },
+      trades: { value: "7", label: "Core trades on one team" },
       handover: { value: "100%", label: "Handover with walkthrough" },
       response: { value: "24h", label: "Quote response target" },
     },
@@ -56,7 +56,7 @@ export const dictionaries = {
       eyebrow: "Our Services",
       titleBefore: "Services That Fit",
       titleAccent: "Your Needs",
-      body: "Six trades, one contractor. We implement, install, and maintain electrical, painting, interiors, gypsum, bathrooms, and plumbing that turn a villa or building in Dubai, UAE into a finished home or workplace.",
+      body: "Seven trades, one contractor. We implement, install, and maintain electrical, painting, interiors, gypsum, bathrooms, plumbing, and interlock that turn a villa or building in Dubai, UAE into a finished home or workplace.",
       learnMore: "Learn more",
       viewAll: "All services",
     },
@@ -68,7 +68,7 @@ export const dictionaries = {
       items: [
         {
           title: "One point of contact",
-          text: "Electrical, paint, gypsum, tile, and plumbing coordinated so trades do not undo each other.",
+          text: "Electrical, paint, gypsum, tile, plumbing, and interlock coordinated so trades do not undo each other.",
         },
         {
           title: "Site-ready detailing",
@@ -122,7 +122,7 @@ export const dictionaries = {
       eyebrow: "Field Work",
       titleBefore: "On-site work",
       titleAccent: "for every trade",
-      body: "Electrical, painting, interiors, gypsum, bathrooms, and plumbing photographed as the crew actually does the job — not catalogue rooms from another climate.",
+      body: "Electrical, painting, interiors, gypsum, bathrooms, plumbing, and interlock photographed as the crew actually does the job — not catalogue rooms from another climate.",
     },
     cta: {
       eyebrow: "Contact Us",
@@ -136,9 +136,9 @@ export const dictionaries = {
       eyebrow: "The company",
       titleBefore: "Jamal Alfan",
       titleAccent: "Technical Services",
-      lead: "We finish the trades that make a building livable — power, water, paint, gypsum, tile, and interior decor — with the same care on a villa bedroom as on a reception hall.",
+      lead: "We finish the trades that make a building livable — power, water, paint, gypsum, tile, interior decor, and interlock — with the same care on a villa bedroom as on a reception hall.",
       p1: "Jamal Alfan Technical Services Co. works across Dubai and the UAE on villas, apartments, and commercial interiors in Dubai Marina, Downtown Dubai, Jumeirah, Arabian Ranches, Abu Dhabi, and Sharjah, and further cities. The flyer promise is the operating rule: you dream it, we build it — which means we take a sketch, a WhatsApp photo, or an architect’s set and turn it into installed work.",
-      p2: "Our crews cover six core services so you are not juggling five contractors for one floor. Electrical and plumbing go in before gypsum closes. Paint waits for dust to settle. Bathrooms are waterproofed before a single tile is set.",
+      p2: "Our crews cover seven core services so you are not juggling six contractors for one floor. Electrical and plumbing go in before gypsum closes. Paint waits for dust to settle. Bathrooms are waterproofed before a single tile is set. Interlock is compacted before the villa is lived in.",
       valuesTitle: "How we measure a good job",
       values: [
         { title: "Sequence", text: "The right trade on the right day. No repainting because plumbing ran late." },
@@ -184,7 +184,7 @@ export const dictionaries = {
       invalidEmail: "Enter a valid email address.",
     },
     footer: {
-      blurb: "Electrical, painting, interiors, gypsum, bathrooms, and plumbing across Dubai and the UAE — implemented as one job, not six arguments.",
+      blurb: "Electrical, painting, interiors, gypsum, bathrooms, plumbing, and interlock across Dubai and the UAE — implemented as one job, not seven arguments.",
       services: "Services",
       company: "Company",
       contact: "Contact",
@@ -214,7 +214,7 @@ export const dictionaries = {
       eyebrow: "UAE coverage",
       titleBefore: "Technical services across",
       titleAccent: "Dubai & the UAE",
-      body: "Based in Dubai — from Dubai Marina and Jumeirah to Arabian Ranches, Abu Dhabi, and Sharjah — we finish electrical, paint, gypsum, bathrooms, and plumbing where your villa or building actually is.",
+      body: "Based in Dubai — from Dubai Marina and Jumeirah to Arabian Ranches, Abu Dhabi, and Sharjah — we finish electrical, paint, gypsum, bathrooms, plumbing, and interlock where your villa or building actually is.",
       viewAll: "All service areas",
     },
     faq: {
@@ -227,8 +227,8 @@ export const dictionaries = {
       eyebrow: "Local contractor",
       titleBefore: "Built for villas and buildings",
       titleAccent: "in the UAE",
-      p1: "Search for an electrician, painter, gypsum crew, tiler, or plumber in Dubai, UAE and you usually get five numbers and no sequence. Jamal Alfan Technical Services Co. is one technical contractor for the finishing trades that make a villa livable: power, water, paint, ceilings, bathrooms, and interior decor.",
-      p2: "Whether the site is a Dubai Hills compound, a Dubai Marina apartment, a Jumeirah villa, or a home in Abu Dhabi or Sharjah, the method stays the same. Electrical and plumbing close before gypsum. Waterproofing goes down before tile. Paint waits for dust. You get Arabic and English, WhatsApp updates, and a walkthrough at handover.",
+      p1: "Search for an electrician, painter, gypsum crew, tiler, plumber, or interlock crew in Dubai, UAE and you usually get five numbers and no sequence. Jamal Alfan Technical Services Co. is one technical contractor for the finishing trades that make a villa livable: power, water, paint, ceilings, bathrooms, interior decor, and outdoor paving.",
+      p2: "Whether the site is a Dubai Hills compound, a Dubai Marina apartment, a Jumeirah villa, or a home in Abu Dhabi or Sharjah, the method stays the same. Electrical and plumbing close before gypsum. Waterproofing goes down before tile. Paint waits for dust. Interlock is compacted after falls are set. You get Arabic and English, WhatsApp updates, and a walkthrough at handover.",
       points: [
         { title: "Villas & majlis", text: "Cove lighting, gypsum trays, feature walls, and reception interiors specified for how Dubai homes are actually used." },
         { title: "Apartments & buildings", text: "Distribution boards, risers, common-area paint, and wet rooms sequenced so occupied floors stay livable." },
@@ -239,7 +239,7 @@ export const dictionaries = {
       eyebrow: "Where we work",
       titleBefore: "Cities we serve in",
       titleAccent: "Dubai & the UAE",
-      lead: "Jamal Alfan Technical Services Co. is based in Dubai and takes electrical, painting, interior decor, gypsum, bathroom, and plumbing jobs across the UAE. Pick a community for how we typically work there — then send the brief.",
+      lead: "Jamal Alfan Technical Services Co. is based in Dubai and takes electrical, painting, interior decor, gypsum, bathroom, plumbing, and interlock jobs across the UAE. Pick a community for how we typically work there — then send the brief.",
     },
     notFound: {
       title: "Page not found",
@@ -252,27 +252,27 @@ export const dictionaries = {
   },
   ar: {
     meta: {
-      homeTitle: "خدمات فنية في دبي | كهرباء ودهان وجبس وسباكة للفلل",
+      homeTitle: "خدمات فنية في دبي | كهرباء ودهان وجبس وسباكة وإنترلوك للفلل",
       homeDescription:
-        "شركة جمال الفان للخدمات الفنية — أعمال كهربائية، دهان فلل، ديكور داخلي، أسقف جبس، بلاط حمامات، وسباكة في دبي وأبوظبي والشارقة وعجمان ومدن الإمارات. تحلم بها، نحن نبنيها.",
-      servicesTitle: "خدمات فنية في دبي | كهرباء ودهان وديكور وسباكة",
+        "شركة جمال الفان للخدمات الفنية — أعمال كهربائية، دهان فلل، ديكور داخلي، أسقف جبس، بلاط حمامات، سباكة، وإنترلوك في دبي وأبوظبي والشارقة وعجمان ومدن الإمارات. تحلم بها، نحن نبنيها.",
+      servicesTitle: "خدمات فنية في دبي | كهرباء ودهان وديكور وسباكة وإنترلوك",
       servicesDescription:
-        "مقاول فني في دبي واحد للأعمال الكهربائية والدهان والديكور الداخلي وأسقف الجبس والبلاط والحمامات والسباكة — فلل ومباني في دبي وأبوظبي والشارقة وكل الإمارات.",
+        "مقاول فني في دبي واحد للأعمال الكهربائية والدهان والديكور الداخلي وأسقف الجبس والبلاط والحمامات والسباكة والإنترلوك — فلل ومباني في دبي وأبوظبي والشارقة وكل الإمارات.",
       projectsTitle: "مشاريع فلل ومباني في دبي | جمال الفان",
       projectsDescription:
-        "نماذج من مجالس الفلل والحمامات والأسقف والدهان والكهرباء والسباكة لشركة جمال الفان للخدمات الفنية في دبي والإمارات.",
+        "نماذج من مجالس الفلل والحمامات والأسقف والدهان والكهرباء والسباكة والإنترلوك لشركة جمال الفان للخدمات الفنية في دبي والإمارات.",
       aboutTitle: "عن جمال الفان | مقاول فني في الإمارات العربية المتحدة",
       aboutDescription:
-        "شركة جمال الفان للخدمات الفنية مقاول فني في دبي لتشطيب الفلل والمباني — كهرباء ودهان وجبس وديكور وحمامات وسباكة في أنحاء الإمارات.",
+        "شركة جمال الفان للخدمات الفنية مقاول فني في دبي لتشطيب الفلل والمباني — كهرباء ودهان وجبس وديكور وحمامات وسباكة وإنترلوك في أنحاء الإمارات.",
       contactTitle: "تواصل مع جمال الفان | عرض سعر في دبي",
       contactDescription:
         "اتصل على 0544582595 أو 0502471185، أو واتساب موجز الفيلا أو المبنى، أو اطلب عرض سعر. شركة جمال الفان تغطي دبي وأبوظبي والشارقة وكل الإمارات.",
       quoteTitle: "طلب عرض سعر | خدمات فنية في دبي",
       quoteDescription:
-        "اطلب عرض سعر للكهرباء أو الدهان أو الجبس أو الحمامات أو السباكة لفيلا أو مبنى في دبي. ترد جمال الفان خلال 24 ساعة في أيام العمل.",
+        "اطلب عرض سعر للكهرباء أو الدهان أو الجبس أو الحمامات أو السباكة أو الإنترلوك لفيلا أو مبنى في دبي. ترد جمال الفان خلال 24 ساعة في أيام العمل.",
       coverageTitle: "مناطق الخدمة في دبي | دبي، دبي مارينا، أبوظبي والمزيد",
       coverageDescription:
-        "تغطي شركة جمال الفان للخدمات الفنية دبي وأبوظبي والشارقة وعجمان والعين ومدن الإمارات — كهرباء ودهان وديكور وجبس وبلاط وسباكة.",
+        "تغطي شركة جمال الفان للخدمات الفنية دبي وأبوظبي والشارقة وعجمان والعين ومدن الإمارات — كهرباء ودهان وديكور وجبس وبلاط وسباكة وإنترلوك.",
     },
     topbar: {
       call: "اتصال",
@@ -288,7 +288,7 @@ export const dictionaries = {
       eyebrow: "خدمات فنية · دبي، الإمارات العربية المتحدة",
       line1: "تحلم بها",
       line2: "نحن نبنيها",
-      body: "كهرباء، دهان، ديكور داخلي، أسقف جبس، حمامات، وسباكة لفلل ومباني دبي وأبوظبي والشارقة وكل الإمارات — تشطيب بمستوى تعيشه يومياً، لا صورة فقط.",
+      body: "كهرباء، دهان، ديكور داخلي، أسقف جبس، حمامات، سباكة، وإنترلوك لفلل ومباني دبي وأبوظبي والشارقة وكل الإمارات — تشطيب بمستوى تعيشه يومياً، لا صورة فقط.",
       ctaQuote: "اطلب عرض سعر",
       ctaCall: "اتصل الآن",
       ctaWhatsapp: "واتساب",
@@ -296,7 +296,7 @@ export const dictionaries = {
     },
     stats: {
       years: { value: "+10", label: "سنوات عمل في المواقع" },
-      trades: { value: "6", label: "تخصصات أساسية في فريق واحد" },
+      trades: { value: "7", label: "تخصصات أساسية في فريق واحد" },
       handover: { value: "100%", label: "تسليم مع جولة معاينة" },
       response: { value: "24س", label: "هدف الرد على عرض السعر" },
     },
@@ -304,7 +304,7 @@ export const dictionaries = {
       eyebrow: "خدماتنا",
       titleBefore: "خدمات تناسب",
       titleAccent: "احتياجك",
-      body: "ستة تخصصات، مقاول واحد. ننفذ ونركب ونصون الكهرباء والدهان والديكور والجبس والحمامات والسباكة التي تحول فيلا أو مبنى في دبي إلى منزل أو مقر جاهز.",
+      body: "سبعة تخصصات، مقاول واحد. ننفذ ونركب ونصون الكهرباء والدهان والديكور والجبس والحمامات والسباكة والإنترلوك التي تحول فيلا أو مبنى في دبي إلى منزل أو مقر جاهز.",
       learnMore: "اعرف المزيد",
       viewAll: "كل الخدمات",
     },
@@ -316,7 +316,7 @@ export const dictionaries = {
       items: [
         {
           title: "جهة تواصل واحدة",
-          text: "الكهرباء والدهان والجبس والبلاط والسباكة بتنسيق يمنع أن يفسد تخصص تخصصاً آخر.",
+          text: "الكهرباء والدهان والجبس والبلاط والسباكة والإنترلوك بتنسيق يمنع أن يفسد تخصص تخصصاً آخر.",
         },
         {
           title: "تفاصيل جاهزة للموقع",
@@ -370,7 +370,7 @@ export const dictionaries = {
       eyebrow: "العمل الميداني",
       titleBefore: "أعمال الموقع",
       titleAccent: "لكل تخصص",
-      body: "كهرباء ودهان وديكور وجبس وحمامات وسباكة كما ينفّذها الطاقم في الموقع — لا غرف كتالوج من مناخ آخر.",
+      body: "كهرباء ودهان وديكور وجبس وحمامات وسباكة وإنترلوك كما ينفّذها الطاقم في الموقع — لا غرف كتالوج من مناخ آخر.",
     },
     cta: {
       eyebrow: "تواصل معنا",
@@ -384,9 +384,9 @@ export const dictionaries = {
       eyebrow: "الشركة",
       titleBefore: "جمال الفان",
       titleAccent: "للخدمات الفنية",
-      lead: "ننجز الحرف التي تجعل المبنى قابلاً للعيش — الكهرباء والمياه والدهان والجبس والبلاط والديكور — بنفس العناية في غرفة نوم فيلا كما في صالة استقبال.",
+      lead: "ننجز الحرف التي تجعل المبنى قابلاً للعيش — الكهرباء والمياه والدهان والجبس والبلاط والديكور والإنترلوك — بنفس العناية في غرفة نوم فيلا كما في صالة استقبال.",
       p1: "تعمل شركة جمال الفان للخدمات الفنية في أنحاء الإمارات على الفلل والشقق والديكورات التجارية في دبي وأبوظبي والشارقة وعجمان ومدن أخرى. وعد المطوية هو قاعدة التشغيل: تحلم بها، نحن نبنيها — أي نأخذ رسماً أو صورة واتساب أو مخططاً ونحوله إلى عمل مركّب.",
-      p2: "يغطي فريقنا ستة خدمات أساسية حتى لا تدير خمسة مقاولين لطابق واحد. الكهرباء والسباكة قبل إغلاق الجبس. الدهان بعد استقرار الغبار. الحمامات تُعزل قبل وضع أول بلاطة.",
+      p2: "يغطي فريقنا سبعة خدمات أساسية حتى لا تدير ستة مقاولين لطابق واحد. الكهرباء والسباكة قبل إغلاق الجبس. الدهان بعد استقرار الغبار. الحمامات تُعزل قبل وضع أول بلاطة. الإنترلوك يُرص قبل السكن.",
       valuesTitle: "كيف نقيس العمل الجيد",
       values: [
         { title: "التسلسل", text: "التخصص الصحيح في اليوم الصحيح. لا إعادة دهان لأن السباكة تأخرت." },
@@ -432,7 +432,7 @@ export const dictionaries = {
       invalidEmail: "أدخل بريداً إلكترونياً صحيحاً.",
     },
     footer: {
-      blurb: "كهرباء ودهان وديكور وجبس وحمامات وسباكة في دبي والإمارات — كعمل واحد، لا ستة خلافات.",
+      blurb: "كهرباء ودهان وديكور وجبس وحمامات وسباكة وإنترلوك في دبي والإمارات — كعمل واحد، لا سبعة خلافات.",
       services: "الخدمات",
       company: "الشركة",
       contact: "التواصل",
@@ -462,7 +462,7 @@ export const dictionaries = {
       eyebrow: "تغطية الإمارات",
       titleBefore: "خدمات فنية في",
       titleAccent: "الإمارات",
-      body: "مقرنا في دبي — من دبي مارينا وجميرا إلى المرابع العربية وأبوظبي والشارقة — ننجز الكهرباء والدهان والجبس والحمامات والسباكة حيث تقع فيلاكم أو مبناكم.",
+      body: "مقرنا في دبي — من دبي مارينا وجميرا إلى المرابع العربية وأبوظبي والشارقة — ننجز الكهرباء والدهان والجبس والحمامات والسباكة والإنترلوك حيث تقع فيلاكم أو مبناكم.",
       viewAll: "كل مناطق الخدمة",
     },
     faq: {
@@ -475,8 +475,8 @@ export const dictionaries = {
       eyebrow: "مقاول محلي",
       titleBefore: "مخصص للفلل والمباني",
       titleAccent: "في الإمارات",
-      p1: "البحث عن كهربائي أو دهان أو طاقم جبس أو بلاط أو سباك في دبي غالباً يعطي خمسة أرقام بلا تسلسل. شركة جمال الفان للخدمات الفنية مقاول فني واحد لحرف التشطيب التي تجعل الفيلا قابلة للعيش: الكهرباء والمياه والدهان والأسقف والحمامات والديكور.",
-      p2: "سواء كان الموقع مجمعاً في دبي هيلز أو شقة في دبي مارينا أو فيلا في جميرا أو منزلاً في أبوظبي أو الشارقة، الطريقة واحدة. الكهرباء والسباكة قبل إغلاق الجبس. العزل قبل البلاط. الدهان بعد الغبار. تتوفر العربية والإنجليزية، تحديثات واتساب، وجولة عند التسليم.",
+      p1: "البحث عن كهربائي أو دهان أو طاقم جبس أو بلاط أو سباك أو إنترلوك في دبي غالباً يعطي خمسة أرقام بلا تسلسل. شركة جمال الفان للخدمات الفنية مقاول فني واحد لحرف التشطيب التي تجعل الفيلا قابلة للعيش: الكهرباء والمياه والدهان والأسقف والحمامات والديكور والرصف الخارجي.",
+      p2: "سواء كان الموقع مجمعاً في دبي هيلز أو شقة في دبي مارينا أو فيلا في جميرا أو منزلاً في أبوظبي أو الشارقة، الطريقة واحدة. الكهرباء والسباكة قبل إغلاق الجبس. العزل قبل البلاط. الدهان بعد الغبار. الإنترلوك يُرص بعد ضبط المناسيب. تتوفر العربية والإنجليزية، تحديثات واتساب، وجولة عند التسليم.",
       points: [
         { title: "فلل ومجالس", text: "إضاءة مخفية وصواني جبس وجدران مميزة وديكور استقبال يناسب استخدام البيت الإماراتي فعلاً." },
         { title: "شقق ومباني", text: "لوحات توزيع وأعمدة ودهان مناطق مشتركة وحمامات بتسلسل يبقي الطوابق المسكونة قابلة للعيش." },
@@ -487,7 +487,7 @@ export const dictionaries = {
       eyebrow: "أين نعمل",
       titleBefore: "مدن نخدمها في",
       titleAccent: "الإمارات",
-      lead: "مقر شركة جمال الفان للخدمات الفنية في دبي، الإمارات، وتأخذ أعمال الكهرباء والدهان والديكور والجبس والحمامات والسباكة في دبي والإمارات. اختر مدينة لتعرف أسلوب العمل المعتاد هناك — ثم أرسل الموجز.",
+      lead: "مقر شركة جمال الفان للخدمات الفنية في دبي، الإمارات، وتأخذ أعمال الكهرباء والدهان والديكور والجبس والحمامات والسباكة والإنترلوك في دبي والإمارات. اختر مدينة لتعرف أسلوب العمل المعتاد هناك — ثم أرسل الموجز.",
     },
     notFound: {
       title: "الصفحة غير موجودة",

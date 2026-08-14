@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.shortName}`,
   },
   description:
-    "Jamal Alfan Technical Services Co. — electrical, painting, interiors, gypsum, bathrooms, and plumbing in Dubai, UAE.",
+    "Jamal Alfan Technical Services Co. — electrical, painting, interiors, gypsum, bathrooms, plumbing, and interlock in Dubai, UAE.",
   applicationName: SITE.name,
   authors: [{ name: SITE.name, url: SITE.domain }],
   creator: SITE.name,
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "gypsum ceiling Dubai",
     "bathroom tiling Abu Dhabi",
     "plumbing Sharjah",
+    "interlock Dubai",
     "interior decor UAE",
     "شركة جمال الفان",
     "خدمات فنية دبي",
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
     "دهان فلل جميرا",
     "أسقف جبس دبي",
     "سباكة الشارقة",
+    "إنترلوك دبي",
     "مقاول تشطيبات الإمارات",
   ],
 };

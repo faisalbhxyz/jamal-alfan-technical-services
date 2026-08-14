@@ -4,11 +4,11 @@ import { CheckCircle2, MapPin } from "lucide-react";
 import { ServiceCard } from "@/components/service-card";
 import { ButtonLink, Container, SectionHeading } from "@/components/ui";
 import { WhatsAppIcon } from "@/components/whatsapp-icon";
-import { CITIES, FAQS, PROJECTS, SERVICES } from "@/lib/content";
+import { CITIES, FAQS, FIELD_WORK, PROJECTS, SERVICES, getService } from "@/lib/content";
 import { getDictionary, localizedPath } from "@/lib/i18n";
 import { faqJsonLd } from "@/lib/seo";
 import type { Locale } from "@/lib/types";
-import { enquiryWhatsAppHref } from "@/lib/utils";
+import { cn, enquiryWhatsAppHref } from "@/lib/utils";
 
 export function StatsBar({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
@@ -89,34 +89,53 @@ export function FieldWork({ locale }: { locale: Locale }) {
           }
           body={dict.fieldWork.body}
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map((service) => (
-            <Link
-              key={service.slug}
-              href={localizedPath(locale, `/services/${service.slug}`)}
-              className="group overflow-hidden rounded-2xl bg-white shadow-card"
-            >
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src={service.image}
-                  alt={service.imageAlt[locale]}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-5">
-                <p className="text-xs font-semibold uppercase tracking-wider text-brand-accent">
-                  {dict.fieldWork.eyebrow}
-                </p>
-                <h3 className="mt-1 font-display text-lg font-bold text-navy-900 group-hover:text-brand-accent">
-                  {service.title[locale]}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-500">{service.short[locale]}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <ul className="mt-12 grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-4">
+          {FIELD_WORK.map((shot) => {
+            const service = getService(shot.slug);
+            if (!service) return null;
+
+            return (
+              <li
+                key={shot.slug}
+                className={cn(
+                  "relative overflow-hidden rounded-xl bg-navy-900",
+                  shot.layout === "featured" &&
+                    "col-span-2 row-span-2 min-h-[16rem] sm:min-h-[22rem] lg:min-h-[28rem]",
+                  shot.layout === "tile" && "aspect-[4/3] lg:aspect-auto lg:min-h-[13.5rem]",
+                  shot.layout === "wide" &&
+                    "col-span-2 min-h-[11rem] sm:min-h-[14rem] lg:col-span-4 lg:min-h-[16rem]",
+                  shot.layout === "half" &&
+                    "col-span-2 min-h-[11rem] sm:min-h-[14rem] lg:min-h-[16rem]",
+                )}
+              >
+                <Link
+                  href={localizedPath(locale, `/services/${shot.slug}`)}
+                  className="group absolute inset-0"
+                >
+                  <Image
+                    src={shot.image}
+                    alt={shot.imageAlt[locale]}
+                    fill
+                    sizes={
+                      shot.layout === "featured"
+                        ? "(max-width: 1024px) 100vw, 50vw"
+                        : shot.layout === "wide"
+                          ? "100vw"
+                          : shot.layout === "half"
+                            ? "(max-width: 1024px) 100vw, 50vw"
+                            : "(max-width: 1024px) 50vw, 25vw"
+                    }
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/15 to-transparent" />
+                  <h3 className="absolute inset-x-0 bottom-0 p-3 font-display text-sm font-bold text-white sm:p-4 sm:text-base">
+                    {service.title[locale]}
+                  </h3>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </Container>
     </section>
   );

@@ -1,4 +1,4 @@
-import type { City, FaqItem, NavItem, Project, Service } from "@/lib/types";
+import type { City, FaqItem, FieldWorkShot, NavItem, Project, Service } from "@/lib/types";
 
 export const SITE = {
   name: "Jamal Alfan Technical Services Co.",
@@ -1061,6 +1061,243 @@ export const SERVICES: Service[] = [
       ],
     },
   },
+  {
+    slug: "interlock",
+    icon: "interlock",
+    image: "/images/services/interlock.webp",
+    imageAlt: {
+      en: "Villa courtyard with light square pavers framed by dark interlock borders",
+      ar: "ساحة فيلا ببلاط مربع فاتح وإطارات إنترلوك داكنة",
+    },
+    title: {
+      en: "Interlock",
+      ar: "الإنترلوك",
+    },
+    short: {
+      en: "Villa driveways, walkways, and outdoor interlock paving.",
+      ar: "ممرات الفلل والمشايات وأعمال الإنترلوك الخارجية.",
+    },
+    description: {
+      en: "Interlock paving for villa driveways, walkways, parking, and courtyards. We set falls, compact the base, and lay patterns that hold in UAE heat instead of sinking after the first summer.",
+      ar: "أعمال إنترلوك لممرات الفلل والمشايات ومواقف السيارات والساحات. نضبط المناسيب، نرص القاعدة، ونرصف أنماطاً تصمد في حر الإمارات بدل أن تهبط بعد أول صيف.",
+    },
+    features: {
+      en: [
+        "Driveways, walkways, parking, and courtyards",
+        "Excavation, compacted base, and correct falls",
+        "Herringbone, stretcher, and border patterns",
+        "Repair of sunken, cracked, or washed-out pavers",
+      ],
+      ar: [
+        "ممرات ومشايات ومواقف وساحات",
+        "حفر وقاعدة مرصوصة ومناسيب صحيحة",
+        "أنماط متعرجة وطولية وإطارات",
+        "إصلاح البلاط الهابط أو المتشقق أو المغسول",
+      ],
+    },
+    seoTitle: {
+      en: "Interlock in Dubai, UAE — Villa Driveway & Paving",
+      ar: "إنترلوك في دبي — ممرات فلل ورصف خارجي",
+    },
+    seoDescription: {
+      en: "Villa interlock paving in Dubai, Abu Dhabi, and Sharjah, and across the UAE. Driveways, walkways, and courtyards with compacted bases, drainage falls, and a clean handover from Jamal Alfan.",
+      ar: "رصف إنترلوك للفلل في دبي وأبوظبي والشارقة وكل الإمارات. ممرات ومشايات وساحات بقاعدة مرصوصة ومناسيب صرف وتسليم نظيف من جمال الفان.",
+    },
+    h1: {
+      en: "Interlock Paving for Villa Driveways and Walkways in Dubai",
+      ar: "أعمال الإنترلوك لممرات ومشايات الفلل في دبي والإمارات",
+    },
+    intro: {
+      en: "Interlock in Dubai fails when the sand is guessed and the falls run toward the villa door. Jamal Alfan lays driveways, walkways, parking bays, and courtyards with a compacted base, kerbs, and drainage that actually shed water — then we compact the joints so the pattern stays locked through heat and tyre load. Dubai Marina compounds, Jumeirah villas, Arabian Ranches, Abu Dhabi, Sharjah, and across the UAE.",
+      ar: "يفشل الإنترلوك في دبي عندما يُخمَّن الرمل وتجري المناسيب نحو باب الفيلا. ترصف جمال الفان الممرات والمشايات ومواقف السيارات والساحات بقاعدة مرصوصة وأرصفة وصرف يصرف الماء فعلاً — ثم نرص الفواصل ليبقى النمط متماسكاً تحت الحر وحمل الإطارات. مجمعات دبي مارينا وفلل جميرا والمرابع العربية وأبوظبي والشارقة وكل الإمارات.",
+    },
+    sections: [
+      {
+        heading: {
+          en: "Villa interlock in Dubai, Abu Dhabi, and Sharjah",
+          ar: "إنترلوك الفلل في دبي وأبوظبي والشارقة",
+        },
+        body: {
+          en: "We pave private villas, compound driveways, and small commercial yards. Coastal sand in Dubai Marina, Palm Jumeirah, and Sharjah washes poorly compacted joints; inland heat in Arabian Ranches, Dubai Hills, and Al Ain still cooks a thin base. Coverage includes Jumeirah, Al Barsha, Mirdif, Ajman, and Abu Dhabi — same method, local levels.",
+          ar: "نرصف الفلل الخاصة وممرات المجمعات والساحات التجارية الصغيرة. رمل الساحل في دبي مارينا ونخلة جميرا والشارقة يغسل الفواصل ضعيفة الرص؛ وحر الداخل في المرابع العربية ودبي هيلز والعين ما زال يطبخ القاعدة الرقيقة. التغطية تشمل جميرا والبرشاء ومردف وعجمان وأبوظبي — نفس الأسلوب ومناسيب محلية.",
+        },
+      },
+      {
+        heading: {
+          en: "Base, falls, and a pattern that stays locked",
+          ar: "قاعدة ومناسيب ونمط يبقى متماسكاً",
+        },
+        body: {
+          en: "Pretty pavers on loose fill sink in a season. We excavate, compact sub-base, set kerbs, and cut falls away from thresholds and garage slabs before a single block is laid. Herringbone takes vehicle load; stretcher and borders finish the edges. Joints are sanded and compacted so tyres do not walk the pattern open.",
+          ar: "البلاط الجميل على ردم رخو يهبط في موسم. نحفر، نرص الطبقة التأسيسية، نثبت الأرصفة، ونقطع المناسيب بعيداً عن العتبات وبلاطات الكراج قبل رصف أول قطعة. النمط المتعرج يتحمل حمل المركبات؛ والطولي والإطارات تنهي الحواف. تُرمل الفواصل وتُرص حتى لا تفتح الإطارات النمط.",
+        },
+      },
+      {
+        heading: {
+          en: "Interlock sequenced with outdoor paint and drainage",
+          ar: "إنترلوك بتسلسل مع الدهان الخارجي والصرف",
+        },
+        body: {
+          en: "Driveways look unfinished when the painter and the paver never share a date. When we also run villa painting or plumbing, facade coats wait until cutting dust settles, and surface drains sit in the interlock drawing — not as an afterthought against a kerb. Send the area, photos of the existing paving, and whether it is a new driveway or a repair.",
+          ar: "تبدو الممرات ناقصة عندما لا يشارك الدهان والراصف موعداً. عندما ننفذ أيضاً دهان الفيلا أو السباكة، تنتظر طبقات الواجهة حتى يستقر غبار القص، وتجلس مصارف السطح في رسمة الإنترلوك — لا كفكرة لاحقة على الرصيف. أرسلوا المنطقة وصور الرصف القائم وما إذا كان ممراً جديداً أو إصلاحاً.",
+        },
+      },
+    ],
+    process: [
+      {
+        title: { en: "Levels survey", ar: "مسح المناسيب" },
+        text: {
+          en: "We photograph the plot, check falls toward drains, and note sunken or cracked areas.",
+          ar: "نصور القطعة، نفحص المناسيب نحو المصارف، ونسجّل المواضع الهابطة أو المتشققة.",
+        },
+      },
+      {
+        title: { en: "Written paving scope", ar: "نطاق رصف مكتوب" },
+        text: {
+          en: "Area, pattern, kerbs, drainage, and timeline in writing before excavation.",
+          ar: "المساحة والنمط والأرصفة والصرف والجدول مكتوباً قبل الحفر.",
+        },
+      },
+      {
+        title: { en: "Base and lay", ar: "قاعدة ورصف" },
+        text: {
+          en: "Compacted base, kerbs, then pavers cut and locked to the agreed pattern.",
+          ar: "قاعدة مرصوصة وأرصفة ثم بلاط مقصوص ومقفول وفق النمط المتفق عليه.",
+        },
+      },
+      {
+        title: { en: "Compact & handover", ar: "رص وتسليم" },
+        text: {
+          en: "Joints sanded, surface compacted, then a walkthrough of falls and edges with you.",
+          ar: "ترميل الفواصل ورص السطح ثم جولة على المناسيب والحواف معكم.",
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: {
+          en: "Do you install villa interlock driveways in Dubai and Abu Dhabi?",
+          ar: "هل تركّبون إنترلوك ممرات الفلل في دبي وأبوظبي؟",
+        },
+        answer: {
+          en: "Yes. We pave driveways, walkways, parking, and courtyards for villas in Dubai, Abu Dhabi, Sharjah, Ajman, and other UAE cities, with compacted bases and drainage falls before handover.",
+          ar: "نعم. نرصف الممرات والمشايات والمواقف والساحات لفلل دبي وأبوظبي والشارقة وعجمان ومدن إماراتية أخرى، مع قواعد مرصوصة ومناسيب صرف قبل التسليم.",
+        },
+      },
+      {
+        question: {
+          en: "Can you repair sunken or washed-out interlock?",
+          ar: "هل تصلحون الإنترلوك الهابط أو المغسول؟",
+        },
+        answer: {
+          en: "Yes. We lift the failed zone, correct the base and falls, and relay matching pavers so the patch does not read as a different driveway. Share photos and the area on WhatsApp to scope the visit.",
+          ar: "نعم. نرفع المنطقة التالفة، نصحح القاعدة والمناسيب، ونعيد الرصف بقطع مطابقة حتى لا يبدو الترقيع ممراً مختلفاً. أرسلوا الصور والمنطقة عبر واتساب لتحديد الزيارة.",
+        },
+      },
+      {
+        question: {
+          en: "Do you compact interlock joints after laying?",
+          ar: "هل ترصّون فواصل الإنترلوك بعد الرصف؟",
+        },
+        answer: {
+          en: "Always. Sanded joints and plate compaction are part of the job — that is what keeps the pattern locked under heat and tyre load, not an extra.",
+          ar: "دائماً. ترميل الفواصل والرص بالصفيحة جزء من العمل — هذا ما يبقي النمط مقفولاً تحت الحر وحمل الإطارات، وليست إضافة.",
+        },
+      },
+      {
+        question: {
+          en: "How do I get an interlock quote in the UAE?",
+          ar: "كيف أحصل على عرض سعر للإنترلوك في الإمارات؟",
+        },
+        answer: {
+          en: "WhatsApp 054 458 2595 with the city, photos of the driveway or yard, and whether it is new paving or a repair. Or call 050 247 1185. Typical reply within 24 hours on working days.",
+          ar: "واتساب 0544582595 مع المدينة وصور الممر أو الساحة وما إذا كان رصفاً جديداً أو إصلاحاً. أو اتصال على 0502471185. الرد المعتاد خلال 24 ساعة في أيام العمل.",
+        },
+      },
+    ],
+    keywords: {
+      en: [
+        "interlock Dubai",
+        "villa interlock driveway Jumeirah",
+        "interlock paving Dubai Marina",
+        "interlock tiles Abu Dhabi",
+        "interlock contractor UAE",
+      ],
+      ar: [
+        "إنترلوك دبي",
+        "إنترلوك ممرات فلل جميرا",
+        "رصف إنترلوك دبي مارينا",
+        "بلاط إنترلوك أبوظبي",
+        "مقاول إنترلوك الإمارات",
+      ],
+    },
+  },
+];
+
+export const FIELD_WORK: FieldWorkShot[] = [
+  {
+    slug: "electrical-works",
+    image: "/images/field-work/electrical.jpg",
+    layout: "featured",
+    imageAlt: {
+      en: "Electrician in safety gear working on an outdoor distribution box",
+      ar: "كهربائي بمعدات السلامة يعمل على صندوق توزيع خارجي",
+    },
+  },
+  {
+    slug: "painting-services",
+    image: "/images/field-work/painting.jpg",
+    layout: "tile",
+    imageAlt: {
+      en: "Close-up of a paint roller applying a fresh coat to a wall",
+      ar: "لقطة قريبة لرول دهان يضع طبقة جديدة على جدار",
+    },
+  },
+  {
+    slug: "interior-decor",
+    image: "/images/field-work/interior.jpg",
+    layout: "tile",
+    imageAlt: {
+      en: "Completed open-plan living, dining, and kitchen interior",
+      ar: "تشطيب داخلي مكتمل لصالة ومعيشة ومطبخ مفتوح",
+    },
+  },
+  {
+    slug: "gypsum-ceiling-works",
+    image: "/images/field-work/gypsum.jpg",
+    layout: "tile",
+    imageAlt: {
+      en: "On-site gypsum and drywall framing during renovation",
+      ar: "أعمال جبس وهياكل جدران في موقع الترميم",
+    },
+  },
+  {
+    slug: "tile-bathroom-work",
+    image: "/images/field-work/bathroom.jpg",
+    layout: "tile",
+    imageAlt: {
+      en: "Finished modern bathroom with freestanding tub and floating vanity",
+      ar: "حمام حديث مكتمل مع بانيو مستقل وخزانة عائمة",
+    },
+  },
+  {
+    slug: "interlock",
+    image: "/images/field-work/interlock.jpg",
+    layout: "half",
+    imageAlt: {
+      en: "Crew laying interlocking pavers on a villa driveway",
+      ar: "طاقم يرصف بلاط الإنترلوك في ممر فيلا",
+    },
+  },
+  {
+    slug: "plumbing",
+    image: "/images/field-work/plumbing.jpg",
+    layout: "half",
+    imageAlt: {
+      en: "Technicians assembling pipe fittings during a plumbing install",
+      ar: "فنيون يركبون وصلات الأنابيب أثناء تمديد السباكة",
+    },
+  },
 ];
 
 export const PROJECTS: Project[] = [
@@ -1148,6 +1385,20 @@ export const PROJECTS: Project[] = [
       ar: "مطبخ معاصر بأدوات سباكة جديدة وأسطح حجرية",
     },
   },
+  {
+    slug: "villa-interlock-driveway",
+    title: {
+      en: "Villa Interlock Driveway",
+      ar: "ممر إنترلوك لفيلا",
+    },
+    category: "interlock",
+    location: { en: "Dubai, UAE", ar: "دبي، الإمارات العربية المتحدة" },
+    image: "/images/project-interlock.jpg",
+    imageAlt: {
+      en: "Finished villa courtyard with herringbone interlocking pavers",
+      ar: "ساحة فيلا مكتملة ببلاط إنترلوك بنمط متعرج",
+    },
+  },
 ];
 
 export const CITIES: City[] = [
@@ -1174,8 +1425,8 @@ export const CITIES: City[] = [
     name: { en: "Jumeirah", ar: "جميرا" },
     region: { en: "Dubai", ar: "دبي" },
     blurb: {
-      en: "Villa painting, majlis interiors, gypsum, and electrical upgrades for Jumeirah family homes.",
-      ar: "دهان فلل، ديكور مجالس، جبس، وتحديث كهرباء لمنازل جميرا العائلية.",
+      en: "Villa painting, majlis interiors, gypsum, electrical upgrades, and interlock for Jumeirah family homes.",
+      ar: "دهان فلل، ديكور مجالس، جبس، تحديث كهرباء، وإنترلوك لمنازل جميرا العائلية.",
     },
   },
   {
@@ -1192,8 +1443,8 @@ export const CITIES: City[] = [
     name: { en: "Arabian Ranches", ar: "المرابع العربية" },
     region: { en: "Dubai", ar: "دبي" },
     blurb: {
-      en: "Villa electrical, gypsum majlis ceilings, bathroom tiling, and painting across Arabian Ranches.",
-      ar: "كهرباء فلل، أسقف جبس للمجالس، بلاط حمامات، ودهان في المرابع العربية.",
+      en: "Villa electrical, gypsum majlis ceilings, bathroom tiling, painting, and interlock across Arabian Ranches.",
+      ar: "كهرباء فلل، أسقف جبس للمجالس، بلاط حمامات، دهان، وإنترلوك في المرابع العربية.",
     },
   },
   {
@@ -1201,8 +1452,8 @@ export const CITIES: City[] = [
     name: { en: "Dubai Hills", ar: "دبي هيلز" },
     region: { en: "Dubai", ar: "دبي" },
     blurb: {
-      en: "New-villa electrical, interiors, gypsum, and plumbing for Dubai Hills compounds.",
-      ar: "كهرباء فلل جديدة، ديكور، جبس، وسباكة لمجمعات دبي هيلز.",
+      en: "New-villa electrical, interiors, gypsum, plumbing, and interlock for Dubai Hills compounds.",
+      ar: "كهرباء فلل جديدة، ديكور، جبس، سباكة، وإنترلوك لمجمعات دبي هيلز.",
     },
   },
   {
@@ -1255,8 +1506,8 @@ export const CITIES: City[] = [
     name: { en: "Abu Dhabi", ar: "أبوظبي" },
     region: { en: "Abu Dhabi", ar: "أبوظبي" },
     blurb: {
-      en: "Villa and building electrical, painting, gypsum, bathrooms, and plumbing in Abu Dhabi.",
-      ar: "كهرباء ودهان وجبس وحمامات وسباكة للفلل والمباني في أبوظبي.",
+      en: "Villa and building electrical, painting, gypsum, bathrooms, plumbing, and interlock in Abu Dhabi.",
+      ar: "كهرباء ودهان وجبس وحمامات وسباكة وإنترلوك للفلل والمباني في أبوظبي.",
     },
   },
   {
@@ -1314,8 +1565,8 @@ export const FAQS: FaqItem[] = [
       ar: "ما الخدمات الفنية التي تقدمونها في دبي؟",
     },
     answer: {
-      en: "Six core trades under one contractor: electrical works, indoor and outdoor painting, interior decor, gypsum and ceiling works, tile and bathroom work, and plumbing. We implement, install, and maintain for villas, apartments, and buildings in Dubai and the UAE.",
-      ar: "ستة تخصصات تحت مقاول واحد: أعمال كهربائية، دهان داخلي وخارجي، ديكور داخلي، جبس وأسقف، بلاط وحمامات، وسباكة. ننفذ ونركب ونصون للفلل والشقق والمباني في دبي والإمارات.",
+      en: "Seven core trades under one contractor: electrical works, indoor and outdoor painting, interior decor, gypsum and ceiling works, tile and bathroom work, plumbing, and interlock paving. We implement, install, and maintain for villas, apartments, and buildings in Dubai and the UAE.",
+      ar: "سبعة تخصصات تحت مقاول واحد: أعمال كهربائية، دهان داخلي وخارجي، ديكور داخلي، جبس وأسقف، بلاط وحمامات، سباكة، وإنترلوك. ننفذ ونركب ونصون للفلل والشقق والمباني في دبي والإمارات.",
     },
   },
   {
@@ -1398,11 +1649,12 @@ export function getProjectsByService(slug: string): Project[] {
 
 const RELATED_BY_SLUG: Record<string, readonly string[]> = {
   "electrical-works": ["gypsum-ceiling-works", "plumbing", "painting-services"],
-  "painting-services": ["gypsum-ceiling-works", "interior-decor", "electrical-works"],
+  "painting-services": ["gypsum-ceiling-works", "interlock", "electrical-works"],
   "interior-decor": ["gypsum-ceiling-works", "painting-services", "tile-bathroom-work"],
   "gypsum-ceiling-works": ["interior-decor", "electrical-works", "painting-services"],
-  "tile-bathroom-work": ["plumbing", "painting-services", "interior-decor"],
-  plumbing: ["tile-bathroom-work", "electrical-works", "painting-services"],
+  "tile-bathroom-work": ["plumbing", "interlock", "interior-decor"],
+  plumbing: ["tile-bathroom-work", "interlock", "electrical-works"],
+  interlock: ["painting-services", "plumbing", "tile-bathroom-work"],
 };
 
 export function getRelatedServices(slug: string): Service[] {
