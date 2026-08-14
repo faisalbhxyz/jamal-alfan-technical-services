@@ -37,9 +37,9 @@ export function Hero({ locale }: HeroProps) {
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-sky">
           {dict.hero.eyebrow}
         </p>
-        <h1 className="mt-5 max-w-3xl font-display text-5xl font-extrabold uppercase leading-[0.95] tracking-tight drop-shadow-[0_2px_18px_rgba(0,0,0,0.45)] sm:text-6xl lg:text-7xl">
+        <h1 className="mt-5 max-w-3xl font-display text-[clamp(1.75rem,8vw,2.25rem)] font-extrabold uppercase leading-[1.05] tracking-tight drop-shadow-[0_2px_18px_rgba(0,0,0,0.45)] sm:text-6xl sm:leading-[0.95] lg:text-7xl">
           <span className="block text-brand-sky">{dict.hero.line1}</span>
-          <span className="mt-2 block text-white">{dict.hero.line2}</span>
+          <span className="mt-1 block text-white sm:mt-2">{dict.hero.line2}</span>
         </h1>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-white/90 drop-shadow-[0_1px_8px_rgba(0,0,0,0.55)] sm:text-lg">
           {dict.hero.body}
