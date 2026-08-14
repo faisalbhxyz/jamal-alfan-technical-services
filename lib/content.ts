@@ -38,10 +38,10 @@ export const SERVICES: Service[] = [
   {
     slug: "electrical-works",
     icon: "electrical",
-    image: "/images/field-work/electrical.jpg",
+    image: "/images/services/electrical.webp",
     imageAlt: {
-      en: "Electrician in PPE working on a wall-mounted distribution box",
-      ar: "كهربائي بمعدات السلامة يعمل على صندوق توزيع مثبت على الجدار",
+      en: "Electrician testing a distribution board with a multimeter",
+      ar: "كهربائي يختبر لوحة توزيع بمقياس متعدد",
     },
     title: {
       en: "Electrical Works",
@@ -209,10 +209,10 @@ export const SERVICES: Service[] = [
   {
     slug: "painting-services",
     icon: "painting",
-    image: "/images/field-work/painting.jpg",
+    image: "/images/services/painting.webp",
     imageAlt: {
-      en: "Hand rolling grey paint onto a white interior wall on site",
-      ar: "يد تفرد دهاناً رمادياً على جدار داخلي أبيض في الموقع",
+      en: "Painters working on a villa exterior and an interior wall",
+      ar: "دهانون يعملون على واجهة فيلا وجدار داخلي",
     },
     title: {
       en: "Painting Services",
@@ -380,10 +380,10 @@ export const SERVICES: Service[] = [
   {
     slug: "interior-decor",
     icon: "interior",
-    image: "/images/field-work/interior.jpg",
+    image: "/images/services/interior.webp",
     imageAlt: {
-      en: "Finished villa interior with cove lighting, millwork, and coordinated furnishings",
-      ar: "ديكور فيلا مكتمل بإضاءة مخفية ونجارة وأثاث منسق",
+      en: "Finished living room with tray ceiling, chandelier, and coordinated furnishings",
+      ar: "غرفة معيشة مكتملة بسقف صواني وثريا وأثاث منسق",
     },
     title: {
       en: "Interior Decor",
@@ -551,10 +551,10 @@ export const SERVICES: Service[] = [
   {
     slug: "gypsum-ceiling-works",
     icon: "gypsum",
-    image: "/images/field-work/gypsum.jpg",
+    image: "/images/services/gypsum.webp",
     imageAlt: {
-      en: "Gypsum board and metal framing being installed on a villa interior site",
-      ar: "تركيب ألواح جبس وهيكل معدني في موقع داخلي لفيلا",
+      en: "Multi-tier gypsum ceiling with cove lighting and a chandelier",
+      ar: "سقف جبس متعدد الطبقات بإضاءة مخفية وثريا",
     },
     title: {
       en: "Gypsum & Ceiling Works",
@@ -722,10 +722,10 @@ export const SERVICES: Service[] = [
   {
     slug: "tile-bathroom-work",
     icon: "bathroom",
-    image: "/images/field-work/bathroom.jpg",
+    image: "/images/services/bathroom.webp",
     imageAlt: {
-      en: "Completed bathroom with large-format tiles, glass shower, and fitted sanitary ware",
-      ar: "حمام مكتمل ببلاط كبير ودش زجاجي وأدوات صحية مركبة",
+      en: "Modern bathroom with stone tiles, black fixtures, and a glass shower",
+      ar: "حمام حديث ببلاط حجري وأدوات سوداء ودش زجاجي",
     },
     title: {
       en: "Tile & Bathroom Work",
@@ -893,10 +893,10 @@ export const SERVICES: Service[] = [
   {
     slug: "plumbing",
     icon: "plumbing",
-    image: "/images/field-work/plumbing.jpg",
+    image: "/images/services/plumbing.webp",
     imageAlt: {
-      en: "Plumber fitting metal water pipes and valves during on-site installation",
-      ar: "سباك يركب أنابيب مياه معدنية وصمامات أثناء التمديد في الموقع",
+      en: "Plumber fitting pipes and valves under a kitchen sink",
+      ar: "سباك يركب أنابيب وصمامات تحت حوض مطبخ",
     },
     title: {
       en: "Plumbing",
