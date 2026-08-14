@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #022868;
+  --sky: #079ce0;
+  --accent: #079ce0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-navy-900 antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic), var(--font-sans), system-ui, sans-serif;
+}
+
+.font-display {
+  letter-spacing: -0.03em;
+}
+
+::selection {
+  background: #079ce0;
+  color: #fff;
+}
+
+.clip-service {
+  clip-path: polygon(0 14%, 16% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+[dir="rtl"] .clip-service {
+  clip-path: polygon(0 0, 84% 0, 100% 14%, 100% 100%, 0 100%);
+}
+
+.ruler-edge {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgb(203 213 225 / 0.9) 0 1px,
+    transparent 1px 12px
+  );
+  background-size: 100% 10px;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.band-hatch {
+  background-color: #022868;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #022868,
+    #022868 6px,
+    #033a82 6px,
+    #033a82 12px
+  );
+}
+
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgb(2 40 104 / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(2 40 104 / 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.skyline-mark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 48' fill='none'%3E%3Crect x='8' y='18' width='22' height='30' fill='%23022868'/%3E%3Crect x='38' y='6' width='24' height='42' fill='%23011640'/%3E%3Crect x='70' y='14' width='20' height='34' fill='%23079CE0'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8% top 20%;
+  background-size: 140px;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-summary {
+  list-style: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Jamal Alfan">
+  <rect width="48" height="48" rx="10" fill="#022868"/>
+  <rect x="8" y="22" width="9" height="18" rx="1" fill="#079CE0"/>
+  <rect x="20" y="10" width="10" height="30" rx="1" fill="#FFFFFF"/>
+  <rect x="33" y="16" width="8" height="24" rx="1" fill="#0685BE"/>
+  <path d="M8 22 L12.5 18 L17 22" fill="#079CE0"/>
+  <path d="M20 10 L25 6 L30 10" fill="#FFFFFF"/>
+  <path d="M33 16 L37 12 L41 16" fill="#0685BE"/>
+</svg>
