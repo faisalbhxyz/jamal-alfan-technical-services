@@ -34,8 +34,6 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export const dynamicParams = false;
-
 export function generateStaticParams(): Array<{ locale: Locale }> {
   return LOCALES.map((locale) => ({ locale }));
 }

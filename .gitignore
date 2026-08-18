@@ -1,6 +1,10 @@
 node_modules
 .next
 out
+.open-next
+.wrangler
+.mf
+.dev.vars*
 .DS_Store
 *.log
 .env
