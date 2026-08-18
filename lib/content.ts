@@ -9,8 +9,7 @@ export const SITE = {
   sloganAr: "تحلم بها نحن نبنيها",
   email: "mde89408@gmail.com",
   phones: [
-    { display: "054 458 2595", e164: "+971544582595", whatsapp: true },
-    { display: "050 247 1185", e164: "+971502471185", whatsapp: false },
+    { display: "050 247 1185", e164: "+971502471185", whatsapp: true },
   ],
   city: "Dubai",
   cityAr: "دبي",
@@ -184,8 +183,8 @@ export const SERVICES: Service[] = [
           ar: "كيف أحصل على عرض سعر للكهرباء في دبي؟",
         },
         answer: {
-          en: "Message 054 458 2595 on WhatsApp with the city, villa or building type, and photos of the board or space. You can also call 050 247 1185 or use the quote form. Typical reply is within 24 hours on working days.",
-          ar: "راسلوا 0544582595 عبر واتساب مع المرابع العربية ونوع الفيلا أو المبنى وصور اللوحة أو المساحة. يمكن أيضاً الاتصال على 0502471185 أو استخدام نموذج عرض السعر. الرد المعتاد خلال 24 ساعة في أيام العمل.",
+          en: "WhatsApp or call 050 247 1185 with the city, villa or building type, and photos of the board or space. You can also use the quote form. Typical reply is within 24 hours on working days.",
+          ar: "راسلوا أو اتصلوا على 0502471185 عبر واتساب مع المرابع العربية ونوع الفيلا أو المبنى وصور اللوحة أو المساحة. يمكن أيضاً استخدام نموذج عرض السعر. الرد المعتاد خلال 24 ساعة في أيام العمل.",
         },
       },
     ],
@@ -355,8 +354,8 @@ export const SERVICES: Service[] = [
           ar: "كيف أحصل على عرض سعر للدهان في دبي؟",
         },
         answer: {
-          en: "WhatsApp 054 458 2595 with the city, interior or facade, and photos. Calls on 050 247 1185 and the quote form also work. We typically reply within 24 hours on working days.",
-          ar: "واتساب 0544582595 مع المرابع العربية والداخل أو الواجهة والصور. الاتصال على 0502471185 والنموذج يعملان أيضاً. الرد المعتاد خلال 24 ساعة في أيام العمل.",
+          en: "WhatsApp or call 050 247 1185 with the city, interior or facade, and photos. The quote form also works. We typically reply within 24 hours on working days.",
+          ar: "واتساب أو اتصال على 0502471185 مع المرابع العربية والداخل أو الواجهة والصور. النموذج يعمل أيضاً. الرد المعتاد خلال 24 ساعة في أيام العمل.",
         },
       },
     ],
@@ -526,8 +525,8 @@ export const SERVICES: Service[] = [
           ar: "كيف أبدأ عرض سعر للديكور الداخلي؟",
         },
         answer: {
-          en: "WhatsApp 054 458 2595 with city, room type, and photos. Or call 050 247 1185 or use the form. Typical reply within 24 hours on working days.",
-          ar: "واتساب 0544582595 مع المرابع العربية ونوع الغرفة والصور. أو اتصال على 0502471185 أو النموذج. الرد المعتاد خلال 24 ساعة في أيام العمل.",
+          en: "WhatsApp or call 050 247 1185 with city, room type, and photos, or use the form. Typical reply within 24 hours on working days.",
+          ar: "واتساب أو اتصال على 0502471185 مع المرابع العربية ونوع الغرفة والصور، أو استخدموا النموذج. الرد المعتاد خلال 24 ساعة في أيام العمل.",
         },
       },
     ],
@@ -697,8 +696,8 @@ export const SERVICES: Service[] = [
           ar: "كيف أطلب عرض سعر لأسقف الجبس في الإمارات؟",
         },
         answer: {
-          en: "WhatsApp 054 458 2595 with the area, room type, and ceiling photos. Or call 050 247 1185. Typical reply within 24 hours on working days.",
-          ar: "واتساب 0544582595 مع المنطقة ونوع الغرفة وصور السقف. أو اتصال على 0502471185. الرد المعتاد خلال 24 ساعة في أيام العمل.",
+          en: "WhatsApp or call 050 247 1185 with the area, room type, and ceiling photos. Typical reply within 24 hours on working days.",
+          ar: "واتساب أو اتصال على 0502471185 مع المنطقة ونوع الغرفة وصور السقف. الرد المعتاد خلال 24 ساعة في أيام العمل.",
         },
       },
     ],
@@ -868,8 +867,8 @@ export const SERVICES: Service[] = [
           ar: "كيف أحصل على عرض سعر للبلاط في الإمارات؟",
         },
         answer: {
-          en: "WhatsApp 054 458 2595 with area, photos, and new-build or renovation. Or call 050 247 1185. Typical reply within 24 hours on working days.",
-          ar: "واتساب 0544582595 مع المنطقة والصور والبناء الجديد أو التجديد. أو اتصال على 0502471185. الرد المعتاد خلال 24 ساعة في أيام العمل.",
+          en: "WhatsApp or call 050 247 1185 with area, photos, and new-build or renovation. Typical reply within 24 hours on working days.",
+          ar: "واتساب أو اتصال على 0502471185 مع المنطقة والصور والبناء الجديد أو التجديد. الرد المعتاد خلال 24 ساعة في أيام العمل.",
         },
       },
     ],
@@ -1039,8 +1038,8 @@ export const SERVICES: Service[] = [
           ar: "كيف أحصل على عرض سعر للسباكة في الإمارات؟",
         },
         answer: {
-          en: "WhatsApp 054 458 2595 with area, photos, and leak repair or new install. Or call 050 247 1185. Typical reply within 24 hours on working days.",
-          ar: "واتساب 0544582595 مع المنطقة والصور وإصلاح التسريب أو التمديد الجديد. أو اتصال على 0502471185. الرد المعتاد خلال 24 ساعة في أيام العمل.",
+          en: "WhatsApp or call 050 247 1185 with area, photos, and leak repair or new install. Typical reply within 24 hours on working days.",
+          ar: "واتساب أو اتصال على 0502471185 مع المنطقة والصور وإصلاح التسريب أو التمديد الجديد. الرد المعتاد خلال 24 ساعة في أيام العمل.",
         },
       },
     ],
@@ -1210,8 +1209,8 @@ export const SERVICES: Service[] = [
           ar: "كيف أحصل على عرض سعر للإنترلوك في الإمارات؟",
         },
         answer: {
-          en: "WhatsApp 054 458 2595 with the city, photos of the driveway or yard, and whether it is new paving or a repair. Or call 050 247 1185. Typical reply within 24 hours on working days.",
-          ar: "واتساب 0544582595 مع المدينة وصور الممر أو الساحة وما إذا كان رصفاً جديداً أو إصلاحاً. أو اتصال على 0502471185. الرد المعتاد خلال 24 ساعة في أيام العمل.",
+          en: "WhatsApp or call 050 247 1185 with the city, photos of the driveway or yard, and whether it is new paving or a repair. Typical reply within 24 hours on working days.",
+          ar: "واتساب أو اتصال على 0502471185 مع المدينة وصور الممر أو الساحة وما إذا كان رصفاً جديداً أو إصلاحاً. الرد المعتاد خلال 24 ساعة في أيام العمل.",
         },
       },
     ],
@@ -1615,8 +1614,8 @@ export const FAQS: FaqItem[] = [
       ar: "كيف أحصل على عرض سعر عبر واتساب؟",
     },
     answer: {
-      en: "Message 054 458 2595 with the Dubai community or emirate, villa or building type, and photos if you have them. We also take calls on 050 247 1185 and written requests on the quote form. Typical reply is within 24 hours on working days.",
-      ar: "راسلوا 0544582595 مع منطقة دبي أو الإمارة ونوع الفيلا أو المبنى والصور إن وُجدت. نستقبل أيضاً اتصال على 0502471185 وطلبات مكتوبة عبر نموذج عرض السعر. الرد المعتاد خلال 24 ساعة في أيام العمل.",
+      en: "WhatsApp or call 050 247 1185 with the Dubai community or emirate, villa or building type, and photos if you have them. Written requests on the quote form also work. Typical reply is within 24 hours on working days.",
+      ar: "راسلوا أو اتصلوا على 0502471185 مع منطقة دبي أو الإمارة ونوع الفيلا أو المبنى والصور إن وُجدت. الطلبات المكتوبة عبر نموذج عرض السعر تعمل أيضاً. الرد المعتاد خلال 24 ساعة في أيام العمل.",
     },
   },
   {

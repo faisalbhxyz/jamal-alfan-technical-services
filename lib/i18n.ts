@@ -18,7 +18,7 @@ export const dictionaries = {
         "Jamal Alfan Technical Services Co. is a Dubai technical contractor for villa and building finishing — electrical, paint, gypsum, interiors, bathrooms, plumbing, and interlock across the UAE.",
       contactTitle: "Contact Jamal Alfan | Quote in Dubai, UAE",
       contactDescription:
-        "Call 054 458 2595 or 050 247 1185, WhatsApp a villa or building brief, or request a quote. Jamal Alfan Technical Services Co. serves Dubai, Abu Dhabi, Sharjah, and the wider UAE.",
+        "Call or WhatsApp 050 247 1185, or request a quote. Jamal Alfan Technical Services Co. serves Dubai, Abu Dhabi, Sharjah, and the wider UAE.",
       quoteTitle: "Request a Quote | Technical Services Dubai, UAE",
       quoteDescription:
         "Get a quote for electrical, painting, gypsum, bathrooms, plumbing, or interlock on your villa or building in Dubai, UAE. Jamal Alfan replies within 24 hours on working days.",
@@ -129,8 +129,8 @@ export const dictionaries = {
       title: "Have a Project in Dubai, UAE?",
       body: "Send the brief, the photos, or just the city and address. We will tell you what the job actually needs.",
       button: "Request a Quote",
-      call: "Call 054 458 2595",
-      whatsapp: "WhatsApp 054 458 2595",
+      call: "Call 050 247 1185",
+      whatsapp: "WhatsApp 050 247 1185",
     },
     about: {
       eyebrow: "The company",
@@ -151,7 +151,7 @@ export const dictionaries = {
       titleBefore: "Talk to",
       titleAccent: "the site team",
       body: "Call, WhatsApp, or send the form. Include photos if you have them — it shortens the first visit.",
-      phones: "Phone numbers",
+      phones: "Phone",
       whatsapp: "WhatsApp",
       email: "Email",
       region: "Location",
@@ -266,7 +266,7 @@ export const dictionaries = {
         "شركة جمال الفان للخدمات الفنية مقاول فني في دبي لتشطيب الفلل والمباني — كهرباء ودهان وجبس وديكور وحمامات وسباكة وإنترلوك في أنحاء الإمارات.",
       contactTitle: "تواصل مع جمال الفان | عرض سعر في دبي",
       contactDescription:
-        "اتصل على 0544582595 أو 0502471185، أو واتساب موجز الفيلا أو المبنى، أو اطلب عرض سعر. شركة جمال الفان تغطي دبي وأبوظبي والشارقة وكل الإمارات.",
+        "اتصل أو واتساب على 0502471185، أو اطلب عرض سعر. شركة جمال الفان تغطي دبي وأبوظبي والشارقة وكل الإمارات.",
       quoteTitle: "طلب عرض سعر | خدمات فنية في دبي",
       quoteDescription:
         "اطلب عرض سعر للكهرباء أو الدهان أو الجبس أو الحمامات أو السباكة أو الإنترلوك لفيلا أو مبنى في دبي. ترد جمال الفان خلال 24 ساعة في أيام العمل.",
@@ -377,8 +377,8 @@ export const dictionaries = {
       title: "لديك مشروع في دبي؟",
       body: "أرسل الموجز أو الصور أو المرابع العربية والعنوان فقط. نخبرك بما يحتاجه العمل فعلاً.",
       button: "طلب عرض سعر",
-      call: "اتصل 054 458 2595",
-      whatsapp: "واتساب 054 458 2595",
+      call: "اتصل 050 247 1185",
+      whatsapp: "واتساب 050 247 1185",
     },
     about: {
       eyebrow: "الشركة",
@@ -399,7 +399,7 @@ export const dictionaries = {
       titleBefore: "تحدث مع",
       titleAccent: "فريق الموقع",
       body: "اتصل أو واتساب أو أرسل النموذج. أرفق صوراً إن وُجدت — تختصر الزيارة الأولى.",
-      phones: "أرقام الهاتف",
+      phones: "الهاتف",
       whatsapp: "واتساب",
       email: "البريد الإلكتروني",
       region: "الموقع",

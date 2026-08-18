@@ -57,7 +57,7 @@ export default async function OpenGraphImage({
             Electrical · Painting · Interiors · Gypsum · Bathrooms · Plumbing
           </div>
         </div>
-        <div style={{ fontSize: 22, color: "#079CE0" }}>054 458 2595 · 050 247 1185</div>
+        <div style={{ fontSize: 22, color: "#079CE0" }}>050 247 1185</div>
       </div>
     ),
     size,
