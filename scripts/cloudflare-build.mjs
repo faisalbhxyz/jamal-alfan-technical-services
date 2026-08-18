@@ -35,7 +35,6 @@ if (process.env.NEXT_PRIVATE_STANDALONE === "true") {
 
 run("opennextjs-cloudflare build");
 
-const branch = process.env.WORKERS_CI_BRANCH ?? "";
-if (process.env.WORKERS_CI === "1" && (branch === "main" || branch === "master")) {
+if (process.env.WORKERS_CI) {
   run("npx wrangler deploy");
 }

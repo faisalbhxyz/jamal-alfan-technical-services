@@ -5,20 +5,12 @@ import {
   getProjectsByService,
   getRelatedServices,
   getService,
-  SERVICES,
 } from "@/lib/content";
 import { buildMetadata, serviceJsonLd } from "@/lib/seo";
-import { LOCALES } from "@/lib/types";
 import { parseLocale } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ locale: string; slug: string }>;
-}
-
-export function generateStaticParams() {
-  return LOCALES.flatMap((locale) =>
-    SERVICES.map((service) => ({ locale, slug: service.slug })),
-  );
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

@@ -1,16 +1,10 @@
 import { ImageResponse } from "next/og";
-import { getService, SERVICES, SITE } from "@/lib/content";
-import { LOCALES } from "@/lib/types";
+import { getService, SITE } from "@/lib/content";
 
 export const alt = `${SITE.shortName} technical services`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-
-export function generateStaticParams() {
-  return LOCALES.flatMap((locale) =>
-    SERVICES.map((service) => ({ locale, slug: service.slug })),
-  );
-}
+export const dynamic = "force-dynamic";
 
 export default async function OpenGraphImage({
   params,

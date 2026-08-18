@@ -4,7 +4,7 @@ export const SITE = {
   name: "Jamal Alfan Technical Services Co.",
   shortName: "Jamal Alfan",
   legalName: "Jamal Alfan Technical Services Co.",
-  domain: "https://jamalalfantechnicalservicesco.com",
+  domain: "https://jamalalfan.com",
   sloganEn: "You Dream It We Build It",
   sloganAr: "تحلم بها نحن نبنيها",
   email: "mde89408@gmail.com",
