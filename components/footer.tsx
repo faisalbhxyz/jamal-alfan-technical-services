@@ -66,6 +66,19 @@ export function Footer({ locale }: FooterProps) {
                 {dict.nav.quote}
               </Link>
             </li>
+            <li>
+              <Link
+                href={localizedPath(locale, "/sitemap")}
+                className="hover:text-brand-accent"
+              >
+                {dict.footer.sitemap}
+              </Link>
+            </li>
+            <li>
+              <a href={`${SITE.domain}/sitemap.xml`} className="hover:text-brand-accent">
+                {dict.footer.sitemapXml}
+              </a>
+            </li>
           </ul>
         </div>
 

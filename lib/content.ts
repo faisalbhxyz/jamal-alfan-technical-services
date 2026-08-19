@@ -27,6 +27,7 @@ export const SITE = {
 export const NAV: NavItem[] = [
   { href: "", label: { en: "Home", ar: "الرئيسية" } },
   { href: "/services", label: { en: "Services", ar: "الخدمات" } },
+  { href: "/blog", label: { en: "Guides", ar: "الأدلة" } },
   { href: "/projects", label: { en: "Projects", ar: "المشاريع" } },
   { href: "/about", label: { en: "About Us", ar: "من نحن" } },
   { href: "/coverage", label: { en: "Service Areas", ar: "مناطق الخدمة" } },
@@ -39,8 +40,8 @@ export const SERVICES: Service[] = [
     icon: "electrical",
     image: "/images/services/electrical.webp",
     imageAlt: {
-      en: "Electrician testing a distribution board with a multimeter",
-      ar: "كهربائي يختبر لوحة توزيع بمقياس متعدد",
+      en: "Villa electrician testing a distribution board in Dubai, UAE",
+      ar: "كهربائي فلل يختبر لوحة توزيع في دبي",
     },
     title: {
       en: "Electrical Works",
@@ -210,8 +211,8 @@ export const SERVICES: Service[] = [
     icon: "painting",
     image: "/images/services/painting.webp",
     imageAlt: {
-      en: "Painters working on a villa exterior and an interior wall",
-      ar: "دهانون يعملون على واجهة فيلا وجدار داخلي",
+      en: "Painters finishing a villa interior and exterior wall in Dubai",
+      ar: "دهانون ينهون جدار فيلا داخلي وواجهة في دبي",
     },
     title: {
       en: "Painting Services",
@@ -381,8 +382,8 @@ export const SERVICES: Service[] = [
     icon: "interior",
     image: "/images/services/interior.webp",
     imageAlt: {
-      en: "Finished living room with tray ceiling, chandelier, and coordinated furnishings",
-      ar: "غرفة معيشة مكتملة بسقف صواني وثريا وأثاث منسق",
+      en: "Finished living room interior decor with tray ceiling in Dubai",
+      ar: "ديكور غرفة معيشة مكتمل بسقف صواني في دبي",
     },
     title: {
       en: "Interior Decor",
@@ -552,8 +553,8 @@ export const SERVICES: Service[] = [
     icon: "gypsum",
     image: "/images/services/gypsum.webp",
     imageAlt: {
-      en: "Multi-tier gypsum ceiling with cove lighting and a chandelier",
-      ar: "سقف جبس متعدد الطبقات بإضاءة مخفية وثريا",
+      en: "Multi-tier gypsum ceiling with cove lighting in a Dubai villa majlis",
+      ar: "سقف جبس متعدد الطبقات بإضاءة مخفية في مجلس فيلا بدبي",
     },
     title: {
       en: "Gypsum & Ceiling Works",
@@ -723,8 +724,8 @@ export const SERVICES: Service[] = [
     icon: "bathroom",
     image: "/images/services/bathroom.webp",
     imageAlt: {
-      en: "Modern bathroom with stone tiles, black fixtures, and a glass shower",
-      ar: "حمام حديث ببلاط حجري وأدوات سوداء ودش زجاجي",
+      en: "Modern bathroom tiling with stone and glass shower in a Dubai villa",
+      ar: "بلاط حمام حديث بحجر ودش زجاجي في فيلا دبي",
     },
     title: {
       en: "Tile & Bathroom Work",
@@ -894,8 +895,8 @@ export const SERVICES: Service[] = [
     icon: "plumbing",
     image: "/images/services/plumbing.webp",
     imageAlt: {
-      en: "Plumber fitting pipes and valves under a kitchen sink",
-      ar: "سباك يركب أنابيب وصمامات تحت حوض مطبخ",
+      en: "Plumber fitting pipes and valves in a Dubai kitchen",
+      ar: "سباك يركب أنابيب وصمامات في مطبخ بدبي",
     },
     title: {
       en: "Plumbing",
@@ -1065,8 +1066,8 @@ export const SERVICES: Service[] = [
     icon: "interlock",
     image: "/images/services/interlock.webp",
     imageAlt: {
-      en: "Villa courtyard with light square pavers framed by dark interlock borders",
-      ar: "ساحة فيلا ببلاط مربع فاتح وإطارات إنترلوك داكنة",
+      en: "Villa courtyard interlock paving in Dubai with square pavers and dark borders",
+      ar: "رصف إنترلوك لساحة فيلا في دبي ببلاط مربع وإطارات داكنة",
     },
     title: {
       en: "Interlock",
@@ -1239,8 +1240,8 @@ export const FIELD_WORK: FieldWorkShot[] = [
     image: "/images/field-work/electrical.jpg",
     layout: "featured",
     imageAlt: {
-      en: "Electrician in safety gear working on an outdoor distribution box",
-      ar: "كهربائي بمعدات السلامة يعمل على صندوق توزيع خارجي",
+      en: "Electrician in safety gear on an outdoor distribution box in Dubai",
+      ar: "كهربائي بمعدات السلامة على صندوق توزيع خارجي في دبي",
     },
   },
   {
@@ -1248,8 +1249,8 @@ export const FIELD_WORK: FieldWorkShot[] = [
     image: "/images/field-work/painting.jpg",
     layout: "tile",
     imageAlt: {
-      en: "Close-up of a paint roller applying a fresh coat to a wall",
-      ar: "لقطة قريبة لرول دهان يضع طبقة جديدة على جدار",
+      en: "Paint roller applying a climate-ready coat on a Dubai villa wall",
+      ar: "رول دهان يضع طبقة مناسبة للمناخ على جدار فيلا في دبي",
     },
   },
   {
@@ -1257,8 +1258,8 @@ export const FIELD_WORK: FieldWorkShot[] = [
     image: "/images/field-work/interior.jpg",
     layout: "tile",
     imageAlt: {
-      en: "Completed open-plan living, dining, and kitchen interior",
-      ar: "تشطيب داخلي مكتمل لصالة ومعيشة ومطبخ مفتوح",
+      en: "Completed open-plan living interior fit-out in Dubai",
+      ar: "تشطيب داخلي مكتمل لصالة مفتوحة في دبي",
     },
   },
   {
@@ -1266,8 +1267,8 @@ export const FIELD_WORK: FieldWorkShot[] = [
     image: "/images/field-work/gypsum.jpg",
     layout: "tile",
     imageAlt: {
-      en: "On-site gypsum and drywall framing during renovation",
-      ar: "أعمال جبس وهياكل جدران في موقع الترميم",
+      en: "On-site gypsum and drywall framing during a Dubai villa renovation",
+      ar: "أعمال جبس وهياكل جدران في ترميم فيلا بدبي",
     },
   },
   {
@@ -1275,8 +1276,8 @@ export const FIELD_WORK: FieldWorkShot[] = [
     image: "/images/field-work/bathroom.jpg",
     layout: "tile",
     imageAlt: {
-      en: "Finished modern bathroom with freestanding tub and floating vanity",
-      ar: "حمام حديث مكتمل مع بانيو مستقل وخزانة عائمة",
+      en: "Finished modern bathroom with tub and vanity in a Dubai villa",
+      ar: "حمام حديث مكتمل مع بانيو وخزانة في فيلا دبي",
     },
   },
   {
@@ -1284,8 +1285,8 @@ export const FIELD_WORK: FieldWorkShot[] = [
     image: "/images/field-work/interlock.jpg",
     layout: "half",
     imageAlt: {
-      en: "Crew laying interlocking pavers on a villa driveway",
-      ar: "طاقم يرصف بلاط الإنترلوك في ممر فيلا",
+      en: "Crew laying interlocking pavers on a Dubai villa driveway",
+      ar: "طاقم يرصف إنترلوك في ممر فيلا بدبي",
     },
   },
   {
@@ -1293,8 +1294,8 @@ export const FIELD_WORK: FieldWorkShot[] = [
     image: "/images/field-work/plumbing.jpg",
     layout: "half",
     imageAlt: {
-      en: "Technicians assembling pipe fittings during a plumbing install",
-      ar: "فنيون يركبون وصلات الأنابيب أثناء تمديد السباكة",
+      en: "Technicians assembling pipe fittings during a Dubai plumbing install",
+      ar: "فنيون يركبون وصلات الأنابيب أثناء سباكة في دبي",
     },
   },
 ];
@@ -1310,8 +1311,8 @@ export const PROJECTS: Project[] = [
     location: { en: "Dubai, UAE", ar: "دبي، الإمارات العربية المتحدة" },
     image: "/images/project-majlis.jpg",
     imageAlt: {
-      en: "Finished majlis with layered gypsum ceiling and warm lighting",
-      ar: "مجلس مكتمل بسقف جبس متعدد الطبقات وإضاءة دافئة",
+      en: "Finished Dubai villa majlis with layered gypsum ceiling and warm lighting",
+      ar: "مجلس فيلا في دبي بسقف جبس متعدد الطبقات وإضاءة دافئة",
     },
   },
   {

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
 import { MapPin } from "lucide-react";
 import { ContactCta } from "@/components/sections";
 import { ButtonLink, Container, PageHero } from "@/components/ui";
-import { CITIES } from "@/lib/content";
+import { CITIES, SERVICES } from "@/lib/content";
 import { getDictionary, localizedPath } from "@/lib/i18n";
-import { breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { KEYWORD_CLUSTERS, buildMetadata, pageJsonLd } from "@/lib/seo";
 import { parseLocale } from "@/lib/utils";
 
 interface PageProps {
@@ -19,23 +20,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: dict.meta.coverageTitle,
     description: dict.meta.coverageDescription,
     path: "/coverage",
+    keywords: KEYWORD_CLUSTERS.coverage[locale],
   });
 }
 
 export default async function CoveragePage({ params }: PageProps) {
   const locale = parseLocale((await params).locale);
   const dict = getDictionary(locale);
-  const jsonLd = breadcrumbJsonLd(locale, [
-    { name: dict.breadcrumbs.home, path: "" },
-    { name: dict.areas.eyebrow, path: "/coverage" },
-  ]);
+  const jsonLd = pageJsonLd(locale, {
+    type: "CollectionPage",
+    path: "/coverage",
+    name: dict.meta.coverageTitle,
+    description: dict.meta.coverageDescription,
+    crumbs: [
+      { name: dict.breadcrumbs.home, path: "" },
+      { name: dict.areas.eyebrow, path: "/coverage" },
+    ],
+  });
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <PageHero
         title={dict.meta.coverageTitle}
         crumbs={[
@@ -52,7 +57,7 @@ export default async function CoveragePage({ params }: PageProps) {
             {dict.coverage.titleBefore}{" "}
             <span className="text-brand-accent">{dict.coverage.titleAccent}</span>
           </h2>
-          <p className="mt-5 max-w-3xl text-lg leading-relaxed text-slate-600">
+          <p className="aeo-answer mt-5 max-w-3xl text-lg leading-relaxed text-slate-600">
             {dict.coverage.lead}
           </p>
           <ul className="mt-12 grid gap-6 md:grid-cols-2">
@@ -76,6 +81,18 @@ export default async function CoveragePage({ params }: PageProps) {
                     <p className="mt-3 text-sm leading-relaxed text-slate-500">
                       {city.blurb[locale]}
                     </p>
+                    <ul className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
+                      {SERVICES.map((service) => (
+                        <li key={service.slug}>
+                          <a
+                            href={localizedPath(locale, `/services/${service.slug}`)}
+                            className="text-xs font-medium text-slate-400 hover:text-brand-accent"
+                          >
+                            {service.title[locale]}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
                     <ButtonLink
                       href={localizedPath(locale, "/quote")}
                       size="sm"

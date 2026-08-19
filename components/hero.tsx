@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SeoImage } from "@/components/seo-image";
 import { Phone } from "lucide-react";
 import { ButtonLink } from "@/components/ui";
 import { WhatsAppIcon } from "@/components/whatsapp-icon";
@@ -17,12 +17,12 @@ export function Hero({ locale }: HeroProps) {
 
   return (
     <section className="relative min-h-[88vh] overflow-hidden">
-      <Image
+      <SeoImage
         src="/images/hero.jpg"
         alt={
           locale === "ar"
-            ? "تشطيب داخلي فاخر لفيلا مع سقف وإضاءة مدروسة"
-            : "Luxury villa interior with crafted ceiling and lighting"
+            ? "تشطيب داخلي لفيلا في دبي بسقف جبس وإضاءة مدروسة — جمال الفان"
+            : "Villa interior finishing in Dubai with gypsum ceiling and lighting — Jamal Alfan"
         }
         fill
         priority
@@ -41,7 +41,7 @@ export function Hero({ locale }: HeroProps) {
           <span className="block text-brand-sky">{dict.hero.line1}</span>
           <span className="mt-1 block text-white sm:mt-2">{dict.hero.line2}</span>
         </h1>
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-white/90 drop-shadow-[0_1px_8px_rgba(0,0,0,0.55)] sm:text-lg">
+        <p className="aeo-answer mt-6 max-w-xl text-base leading-relaxed text-white/90 drop-shadow-[0_1px_8px_rgba(0,0,0,0.55)] sm:text-lg">
           {dict.hero.body}
         </p>
         <div className="mt-9 flex flex-wrap gap-3">

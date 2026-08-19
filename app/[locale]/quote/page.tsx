@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
 import { QuoteForm } from "@/components/quote-form";
 import { Container, PageHero } from "@/components/ui";
 import { SERVICES } from "@/lib/content";
 import { getDictionary, localizedPath } from "@/lib/i18n";
-import { buildMetadata } from "@/lib/seo";
+import { KEYWORD_CLUSTERS, buildMetadata, pageJsonLd } from "@/lib/seo";
 import { parseLocale } from "@/lib/utils";
 
 interface PageProps {
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: dict.meta.quoteTitle,
     description: dict.meta.quoteDescription,
     path: "/quote",
+    keywords: KEYWORD_CLUSTERS.quote[locale],
   });
 }
 
@@ -26,11 +28,22 @@ export default async function QuotePage({ params, searchParams }: PageProps) {
   const locale = parseLocale((await params).locale);
   const { service } = await searchParams;
   const dict = getDictionary(locale);
+  const jsonLd = pageJsonLd(locale, {
+    type: "WebPage",
+    path: "/quote",
+    name: dict.meta.quoteTitle,
+    description: dict.meta.quoteDescription,
+    crumbs: [
+      { name: dict.breadcrumbs.home, path: "" },
+      { name: dict.quote.eyebrow, path: "/quote" },
+    ],
+  });
   const preset =
     service && SERVICES.some((item) => item.slug === service) ? service : undefined;
 
   return (
     <>
+      <JsonLd data={jsonLd} />
       <PageHero
         title={dict.meta.quoteTitle}
         crumbs={[

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { JsonLd } from "@/components/json-ld";
 import { QuoteForm } from "@/components/quote-form";
 import { Container, PageHero } from "@/components/ui";
 import { WhatsAppIcon } from "@/components/whatsapp-icon";
 import { CITIES, getWhatsAppPhone, SITE } from "@/lib/content";
 import { getDictionary, localizedPath } from "@/lib/i18n";
-import { buildMetadata } from "@/lib/seo";
+import { KEYWORD_CLUSTERS, buildMetadata, pageJsonLd } from "@/lib/seo";
 import { enquiryWhatsAppHref, parseLocale, telHref } from "@/lib/utils";
 
 interface PageProps {
@@ -20,17 +21,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: dict.meta.contactTitle,
     description: dict.meta.contactDescription,
     path: "/contact",
+    keywords: KEYWORD_CLUSTERS.contact[locale],
   });
 }
 
 export default async function ContactPage({ params }: PageProps) {
   const locale = parseLocale((await params).locale);
   const dict = getDictionary(locale);
+  const jsonLd = pageJsonLd(locale, {
+    type: "ContactPage",
+    path: "/contact",
+    name: dict.meta.contactTitle,
+    description: dict.meta.contactDescription,
+    crumbs: [
+      { name: dict.breadcrumbs.home, path: "" },
+      { name: dict.contact.eyebrow, path: "/contact" },
+    ],
+  });
   const wa = enquiryWhatsAppHref(locale);
   const whatsappPhone = getWhatsAppPhone();
 
   return (
     <>
+      <JsonLd data={jsonLd} />
       <PageHero
         title={dict.meta.contactTitle}
         crumbs={[
@@ -48,7 +61,7 @@ export default async function ContactPage({ params }: PageProps) {
               {dict.contact.titleBefore}{" "}
               <span className="text-brand-accent">{dict.contact.titleAccent}</span>
             </h2>
-            <p className="mt-4 text-slate-500">{dict.contact.body}</p>
+            <p className="aeo-answer mt-4 text-slate-500">{dict.contact.body}</p>
 
             <ul className="mt-8 space-y-4">
               {SITE.phones.map((phone) => (

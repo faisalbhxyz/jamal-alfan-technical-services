@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { JsonLd } from "@/components/json-ld";
 import { ContactCta } from "@/components/sections";
+import { SeoImage } from "@/components/seo-image";
 import { Container, PageHero } from "@/components/ui";
 import { PROJECTS, SERVICES } from "@/lib/content";
 import { getDictionary, localizedPath } from "@/lib/i18n";
-import { buildMetadata } from "@/lib/seo";
+import { KEYWORD_CLUSTERS, buildMetadata, pageJsonLd } from "@/lib/seo";
 import { parseLocale } from "@/lib/utils";
 
 interface PageProps {
@@ -19,15 +20,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: dict.meta.projectsTitle,
     description: dict.meta.projectsDescription,
     path: "/projects",
+    keywords: KEYWORD_CLUSTERS.projects[locale],
   });
 }
 
 export default async function ProjectsPage({ params }: PageProps) {
   const locale = parseLocale((await params).locale);
   const dict = getDictionary(locale);
+  const jsonLd = pageJsonLd(locale, {
+    type: "CollectionPage",
+    path: "/projects",
+    name: dict.meta.projectsTitle,
+    description: dict.meta.projectsDescription,
+    crumbs: [
+      { name: dict.breadcrumbs.home, path: "" },
+      { name: dict.projects.eyebrow, path: "/projects" },
+    ],
+    image: PROJECTS[0]?.image,
+    imageAlt: PROJECTS[0]?.imageAlt[locale],
+  });
 
   return (
     <>
+      <JsonLd data={jsonLd} />
       <PageHero
         title={dict.meta.projectsTitle}
         crumbs={[
@@ -47,7 +62,7 @@ export default async function ProjectsPage({ params }: PageProps) {
                   className="overflow-hidden rounded-2xl bg-white shadow-card"
                 >
                   <div className="relative aspect-[4/3]">
-                    <Image
+                    <SeoImage
                       src={project.image}
                       alt={project.imageAlt[locale]}
                       fill

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SeoImage } from "@/components/seo-image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { ServiceIcon } from "@/components/service-icon";
@@ -22,7 +22,7 @@ export function ServiceCard({ service, locale }: ServiceCardProps) {
       </Link>
       <div className="relative">
         <div className="relative aspect-[16/11] overflow-hidden rounded-t-2xl clip-service">
-          <Image
+          <SeoImage
             src={service.image}
             alt={service.imageAlt[locale]}
             fill

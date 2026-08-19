@@ -1,11 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle2, Phone } from "lucide-react";
+import { BlogCard } from "@/components/blog-card";
+import { SeoImage } from "@/components/seo-image";
 import { QuoteForm } from "@/components/quote-form";
 import { ContactCta } from "@/components/sections";
 import { ServiceCard } from "@/components/service-card";
 import { ButtonLink, Container } from "@/components/ui";
 import { WhatsAppIcon } from "@/components/whatsapp-icon";
+import { getPostsByService } from "@/lib/blog";
 import { getCoverageCities, SITE } from "@/lib/content";
 import { getDictionary, localizedPath } from "@/lib/i18n";
 import type { Locale, Project, Service } from "@/lib/types";
@@ -27,6 +29,7 @@ export function ServiceDetail({
   const dict = getDictionary(locale);
   const callPhone = SITE.phones[0];
   const whatsappHref = serviceWhatsAppHref(locale, service.title[locale]);
+  const relatedGuides = getPostsByService(service.slug);
 
   return (
     <>
@@ -72,9 +75,30 @@ export function ServiceDetail({
                 <h1 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl lg:text-5xl">
                   {service.h1[locale]}
                 </h1>
-                <p className="mt-5 text-lg leading-relaxed text-slate-600">
+                <p className="aeo-answer mt-5 text-lg leading-relaxed text-slate-600">
                   {service.intro[locale]}
                 </p>
+                <h2 className="sr-only">{dict.servicePage.factsTitle}</h2>
+                <dl className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {[
+                    { dt: dict.servicePage.factCoverage, dd: dict.servicePage.factCoverageValue },
+                    { dt: dict.servicePage.factLanguages, dd: dict.servicePage.factLanguagesValue },
+                    { dt: dict.servicePage.factResponse, dd: dict.servicePage.factResponseValue },
+                    { dt: dict.servicePage.factSequence, dd: dict.servicePage.factSequenceValue },
+                  ].map((fact) => (
+                    <div
+                      key={fact.dt}
+                      className="rounded-2xl border border-slate-100 bg-white px-3 py-3"
+                    >
+                      <dt className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
+                        {fact.dt}
+                      </dt>
+                      <dd className="mt-1 text-sm font-semibold leading-snug text-navy-900">
+                        {fact.dd}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
                 <div className="mt-8 flex flex-wrap gap-3">
                   <ButtonLink
                     href={localizedPath(locale, `/quote?service=${service.slug}`)}
@@ -99,7 +123,7 @@ export function ServiceDetail({
                 </div>
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-card">
-                <Image
+                <SeoImage
                   src={service.image}
                   alt={service.imageAlt[locale]}
                   fill
@@ -194,8 +218,13 @@ export function ServiceDetail({
                   key={city.slug}
                   className="rounded-2xl bg-white px-4 py-3 shadow-card"
                 >
-                  <p className="font-semibold text-navy-900">{city.name[locale]}</p>
-                  <p className="text-xs text-slate-500">{city.region[locale]}</p>
+                  <Link
+                    href={`${localizedPath(locale, "/coverage")}#${city.slug}`}
+                    className="block hover:text-brand-accent"
+                  >
+                    <p className="font-semibold text-navy-900">{city.name[locale]}</p>
+                    <p className="text-xs text-slate-500">{city.region[locale]}</p>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -222,7 +251,10 @@ export function ServiceDetail({
                       +
                     </span>
                   </summary>
-                  <p className="mt-3 text-[15px] leading-relaxed text-slate-600">
+                  <p
+                    data-aeo="faq"
+                    className="mt-3 text-[15px] leading-relaxed text-slate-600"
+                  >
                     {faq.answer[locale]}
                   </p>
                 </details>
@@ -230,6 +262,21 @@ export function ServiceDetail({
             </div>
           </Container>
         </section>
+
+        {relatedGuides.length > 0 ? (
+          <section className="py-16 sm:py-20">
+            <Container>
+              <h2 className="font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+                {dict.blog.serviceGuides}
+              </h2>
+              <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                {relatedGuides.map((post) => (
+                  <BlogCard key={post.slug} post={post} locale={locale} />
+                ))}
+              </div>
+            </Container>
+          </section>
+        ) : null}
 
         {relatedProjects.length > 0 ? (
           <section className="bg-slate-50 py-16 sm:py-20">
@@ -244,7 +291,7 @@ export function ServiceDetail({
                     className="overflow-hidden rounded-2xl bg-white shadow-card"
                   >
                     <div className="relative aspect-[16/10]">
-                      <Image
+                      <SeoImage
                         src={project.image}
                         alt={project.imageAlt[locale]}
                         fill

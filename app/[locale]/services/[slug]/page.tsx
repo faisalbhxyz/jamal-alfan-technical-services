@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/json-ld";
 import { ServiceDetail } from "@/components/service-detail";
 import {
+  SERVICES,
   getProjectsByService,
   getRelatedServices,
   getService,
@@ -31,6 +33,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   });
 }
 
+export function generateStaticParams() {
+  return SERVICES.map((service) => ({ slug: service.slug }));
+}
+
 export default async function ServiceDetailPage({ params }: PageProps) {
   const { locale: raw, slug } = await params;
   const locale = parseLocale(raw);
@@ -43,10 +49,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <ServiceDetail
         locale={locale}
         service={service}

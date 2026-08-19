@@ -1,9 +1,11 @@
 import Link from "next/link";
-import Image from "next/image";
+import { SeoImage } from "@/components/seo-image";
 import { CheckCircle2, MapPin } from "lucide-react";
+import { BlogCard } from "@/components/blog-card";
 import { ServiceCard } from "@/components/service-card";
 import { ButtonLink, Container, SectionHeading } from "@/components/ui";
 import { WhatsAppIcon } from "@/components/whatsapp-icon";
+import { BLOG_POSTS } from "@/lib/blog";
 import { CITIES, FAQS, FIELD_WORK, PROJECTS, SERVICES, getService } from "@/lib/content";
 import { getDictionary, localizedPath } from "@/lib/i18n";
 import { faqJsonLd } from "@/lib/seo";
@@ -112,7 +114,7 @@ export function FieldWork({ locale }: { locale: Locale }) {
                   href={localizedPath(locale, `/services/${shot.slug}`)}
                   className="group absolute inset-0"
                 >
-                  <Image
+                  <SeoImage
                     src={shot.image}
                     alt={shot.imageAlt[locale]}
                     fill
@@ -172,12 +174,12 @@ export function WhyUs({ locale }: { locale: Locale }) {
             </ul>
           </div>
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] sm:aspect-square lg:aspect-[4/5]">
-            <Image
+            <SeoImage
               src="/images/why.jpg"
               alt={
                 locale === "ar"
-                  ? "فريق فني يعمل على تشطيب داخلي"
-                  : "Technical crew finishing an interior space"
+                  ? "فريق جمال الفان ينفذ تشطيباً داخلياً في دبي"
+                  : "Jamal Alfan crew finishing a villa interior in Dubai, UAE"
               }
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -250,7 +252,7 @@ export function ProjectsPreview({ locale }: { locale: Locale }) {
               className="group overflow-hidden rounded-2xl bg-white shadow-card"
             >
               <div className="relative aspect-[4/3]">
-                <Image
+                <SeoImage
                   src={project.image}
                   alt={project.imageAlt[locale]}
                   fill
@@ -340,6 +342,40 @@ export function FeatureList({
         ))}
       </ul>
     </div>
+  );
+}
+
+export function BlogPreview({ locale }: { locale: Locale }) {
+  const dict = getDictionary(locale);
+  const posts = [...BLOG_POSTS]
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+    .slice(0, 3);
+
+  return (
+    <section className="bg-white py-20 sm:py-24" aria-labelledby="blog-heading">
+      <Container>
+        <SectionHeading
+          eyebrow={dict.blog.eyebrow}
+          title={
+            <>
+              <span id="blog-heading">{dict.blog.titleBefore}</span>{" "}
+              <span className="text-brand-accent">{dict.blog.titleAccent}</span>
+            </>
+          }
+          body={dict.blog.body}
+        />
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post) => (
+            <BlogCard key={post.slug} post={post} locale={locale} />
+          ))}
+        </div>
+        <div className="mt-12 text-center">
+          <ButtonLink href={localizedPath(locale, "/blog")} variant="navy">
+            {dict.blog.viewAll}
+          </ButtonLink>
+        </div>
+      </Container>
+    </section>
   );
 }
 
@@ -472,7 +508,7 @@ export function FaqSection({ locale }: { locale: Locale }) {
                   </span>
                 </span>
               </summary>
-              <p className="pb-4 text-sm leading-relaxed text-slate-500">
+              <p data-aeo="faq" className="pb-4 text-sm leading-relaxed text-slate-500">
                 {item.answer[locale]}
               </p>
             </details>

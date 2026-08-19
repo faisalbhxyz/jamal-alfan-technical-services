@@ -25,6 +25,12 @@ export const dictionaries = {
       coverageTitle: "Service Areas in Dubai & UAE | Marina, Jumeirah, Abu Dhabi & More",
       coverageDescription:
         "Jamal Alfan Technical Services Co. covers Dubai Marina, Downtown, Jumeirah, Palm Jumeirah, Arabian Ranches, Dubai Hills, Abu Dhabi, Sharjah, Ajman, and Al Ain for electrical, painting, interiors, gypsum, tiling, plumbing, and interlock.",
+      blogTitle: "Dubai Hire Guides | Villa Electrician, Painting, Gypsum & Bathroom Cost",
+      blogDescription:
+        "High-intent cost and hire guides for a villa electrician, painting, gypsum ceilings, bathroom renovation, plumbing, interlock, and apartment fit-out in Dubai. Written ranges for 2026 — then request a quote from Jamal Alfan.",
+      sitemapTitle: "Sitemap | Jamal Alfan Technical Services Dubai",
+      sitemapDescription:
+        "HTML sitemap of Jamal Alfan pages, technical services, hire guides, and Dubai–UAE coverage areas — electrical, painting, gypsum, bathrooms, plumbing, and interlock.",
     },
     topbar: {
       call: "Call",
@@ -190,6 +196,8 @@ export const dictionaries = {
       contact: "Contact",
       areas: "Service areas",
       rights: "All rights reserved.",
+      sitemap: "Sitemap",
+      sitemapXml: "XML sitemap",
     },
     servicePage: {
       related: "Related projects",
@@ -209,6 +217,15 @@ export const dictionaries = {
       localTitleAccent: "the UAE",
       localBody:
         "We deliver this service for villas, apartments, and buildings in Dubai Marina, Downtown Dubai, Jumeirah, Arabian Ranches, Abu Dhabi, and Sharjah, and cities across Dubai and the UAE — one crew, one handover.",
+      factsTitle: "Key facts",
+      factCoverage: "Areas",
+      factCoverageValue: "Dubai, Abu Dhabi, Sharjah & UAE",
+      factLanguages: "Languages",
+      factLanguagesValue: "Arabic & English",
+      factResponse: "Quote",
+      factResponseValue: "24h on working days",
+      factSequence: "Sequence",
+      factSequenceValue: "Test before gypsum closes",
     },
     areas: {
       eyebrow: "UAE coverage",
@@ -249,6 +266,34 @@ export const dictionaries = {
     breadcrumbs: {
       home: "Home",
     },
+    blog: {
+      eyebrow: "Guides",
+      pageTitle: "Hire Guides for Dubai Villas & Apartments",
+      titleBefore: "Cost and hire answers",
+      titleAccent: "before you call",
+      body: "Seven commercial guides — electrician, painting, gypsum, bathrooms, plumbing, interlock, and apartment fit-out. Written for people ready to hire in Dubai, not to collect tabs.",
+      read: "Read guide",
+      minutes: "min read",
+      viewAll: "All guides",
+      related: "More hire guides",
+      faqTitle: "Questions this guide answers",
+      serviceLead: "Ready to book the trade? See the service page for",
+      ctaQuote: "Get a quote",
+      ctaWhatsapp: "WhatsApp this job",
+      ctaCall: "Call now",
+      quoteTitle: "Get a written quote",
+      quoteBody:
+        "Share the community, villa or apartment type, and photos. We reply within 24 hours on working days.",
+      serviceGuides: "Hire guides for this trade",
+    },
+    htmlSitemap: {
+      eyebrow: "Sitemap",
+      pages: "Pages",
+      services: "Services",
+      guides: "Hire guides",
+      areas: "Service areas",
+      xml: "XML sitemap for search engines",
+    },
   },
   ar: {
     meta: {
@@ -273,6 +318,12 @@ export const dictionaries = {
       coverageTitle: "مناطق الخدمة في دبي | دبي، دبي مارينا، أبوظبي والمزيد",
       coverageDescription:
         "تغطي شركة جمال الفان للخدمات الفنية دبي وأبوظبي والشارقة وعجمان والعين ومدن الإمارات — كهرباء ودهان وديكور وجبس وبلاط وسباكة وإنترلوك.",
+      blogTitle: "أدلة التعيين في دبي | تكلفة كهربائي ودهان وجبس وحمامات",
+      blogDescription:
+        "أدلة تكلفة وتعيين لكهربائي الفلل والدهان وأسقف الجبس وتجديد الحمامات والسباكة والإنترلوك وتشطيب الشقق في دبي. نطاقات 2026 — ثم اطلبوا عرض سعر من جمال الفان.",
+      sitemapTitle: "خريطة الموقع | جمال الفان للخدمات الفنية دبي",
+      sitemapDescription:
+        "خريطة صفحات جمال الفان والخدمات وأدلة التعيين ومناطق التغطية في دبي والإمارات — كهرباء ودهان وجبس وحمامات وسباكة وإنترلوك.",
     },
     topbar: {
       call: "اتصال",
@@ -438,6 +489,8 @@ export const dictionaries = {
       contact: "التواصل",
       areas: "مناطق الخدمة",
       rights: "جميع الحقوق محفوظة.",
+      sitemap: "خريطة الموقع",
+      sitemapXml: "خريطة XML",
     },
     servicePage: {
       related: "مشاريع ذات صلة",
@@ -457,6 +510,15 @@ export const dictionaries = {
       localTitleAccent: "أنحاء الإمارات",
       localBody:
         "نقدم هذه الخدمة للفلل والشقق والمباني في دبي وأبوظبي والشارقة وعجمان ومدن الإمارات — طاقم واحد وتسليم واحد.",
+      factsTitle: "حقائق سريعة",
+      factCoverage: "التغطية",
+      factCoverageValue: "دبي وأبوظبي والشارقة والإمارات",
+      factLanguages: "اللغات",
+      factLanguagesValue: "العربية والإنجليزية",
+      factResponse: "عرض السعر",
+      factResponseValue: "خلال 24 ساعة في أيام العمل",
+      factSequence: "التسلسل",
+      factSequenceValue: "الاختبار قبل إغلاق الجبس",
     },
     areas: {
       eyebrow: "تغطية الإمارات",
@@ -496,6 +558,34 @@ export const dictionaries = {
     },
     breadcrumbs: {
       home: "الرئيسية",
+    },
+    blog: {
+      eyebrow: "الأدلة",
+      pageTitle: "أدلة تعيين لفلل وشقق دبي",
+      titleBefore: "إجابات تكلفة وتعيين",
+      titleAccent: "قبل الاتصال",
+      body: "سبعة أدلة تجارية — كهرباء ودهان وجبس وحمامات وسباكة وإنترلوك وتشطيب شقق. مكتوبة لمن هو جاهز للتعيين في دبي، لا لجمع التبويبات.",
+      read: "اقرأ الدليل",
+      minutes: "د قراءة",
+      viewAll: "كل الأدلة",
+      related: "أدلة تعيين أخرى",
+      faqTitle: "أسئلة يجيب عنها هذا الدليل",
+      serviceLead: "جاهزون لحجز التخصص؟ راجعوا صفحة الخدمة لـ",
+      ctaQuote: "اطلب عرض سعر",
+      ctaWhatsapp: "واتساب لهذا العمل",
+      ctaCall: "اتصل الآن",
+      quoteTitle: "احصلوا على عرض مكتوب",
+      quoteBody:
+        "اذكروا المنطقة ونوع الفيلا أو الشقة والصور. نرد خلال 24 ساعة في أيام العمل.",
+      serviceGuides: "أدلة تعيين لهذا التخصص",
+    },
+    htmlSitemap: {
+      eyebrow: "خريطة الموقع",
+      pages: "الصفحات",
+      services: "الخدمات",
+      guides: "أدلة التعيين",
+      areas: "مناطق الخدمة",
+      xml: "خريطة XML لمحركات البحث",
     },
   },
 } as const;

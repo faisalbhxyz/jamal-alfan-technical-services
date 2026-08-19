@@ -80,7 +80,7 @@ export function Header({ locale }: HeaderProps) {
             <span className="sr-only">{SITE.name}</span>
           </Link>
 
-          <nav className="hidden items-center gap-5 xl:gap-7 lg:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-4 xl:gap-7 lg:flex" aria-label="Primary">
             {NAV.map((item) => {
               const href = localizedPath(locale, item.href || "/");
               const active = isActive(item.href);

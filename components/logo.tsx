@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SeoImage } from "@/components/seo-image";
 import { cn } from "@/lib/utils";
 
 interface LogoProps {
@@ -15,9 +15,9 @@ export function Logo({
   priority = false,
 }: LogoProps) {
   return (
-    <Image
+    <SeoImage
       src={onDark ? "/images/logo-on-dark.png" : "/images/logo.png"}
-      alt="Jamal Alfan Technical Services Co"
+      alt="Jamal Alfan Technical Services Co. — Dubai, UAE"
       width={1693}
       height={593}
       priority={priority}

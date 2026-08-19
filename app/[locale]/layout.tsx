@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { SITE } from "@/lib/content";
 import { localBusinessJsonLd, websiteJsonLd } from "@/lib/seo";
-import { isLocale } from "@/lib/types";
+import { LOCALES, isLocale } from "@/lib/types";
 import { dirFor } from "@/lib/utils";
 import "../globals.css";
 
@@ -34,8 +34,9 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {
   const { locale: raw } = await params;

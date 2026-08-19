@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
 import { ServiceCard } from "@/components/service-card";
-import { ContactCta, FaqSection, ServiceAreas } from "@/components/sections";
+import { ContactCta, ServiceAreas } from "@/components/sections";
 import { Container, PageHero, SectionHeading } from "@/components/ui";
 import { SERVICES } from "@/lib/content";
 import { getDictionary, localizedPath } from "@/lib/i18n";
-import { buildMetadata } from "@/lib/seo";
+import { KEYWORD_CLUSTERS, buildMetadata, servicesIndexJsonLd } from "@/lib/seo";
 import { parseLocale } from "@/lib/utils";
 
 interface PageProps {
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: dict.meta.servicesTitle,
     description: dict.meta.servicesDescription,
     path: "/services",
+    keywords: KEYWORD_CLUSTERS.services[locale],
   });
 }
 
@@ -28,6 +30,7 @@ export default async function ServicesPage({ params }: PageProps) {
 
   return (
     <>
+      <JsonLd data={servicesIndexJsonLd(locale)} />
       <PageHero
         title={dict.meta.servicesTitle}
         crumbs={[
@@ -55,7 +58,6 @@ export default async function ServicesPage({ params }: PageProps) {
         </Container>
       </section>
       <ServiceAreas locale={locale} />
-      <FaqSection locale={locale} />
       <ContactCta locale={locale} />
     </>
   );

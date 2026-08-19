@@ -72,6 +72,34 @@ export interface City {
   country?: Localized<string>;
 }
 
+export type BlogBlock =
+  | { type: "p"; text: string }
+  | { type: "h2"; text: string }
+  | { type: "h3"; text: string }
+  | { type: "ul"; items: string[] }
+  | { type: "ol"; items: string[] }
+  | { type: "callout"; title: string; text: string }
+  | { type: "table"; caption?: string; headers: string[]; rows: string[][] };
+
+export interface BlogPost {
+  slug: string;
+  serviceSlug: string;
+  publishedAt: string;
+  updatedAt: string;
+  readingMinutes: number;
+  image: string;
+  imageAlt: Localized<string>;
+  category: Localized<string>;
+  title: Localized<string>;
+  seoTitle: Localized<string>;
+  seoDescription: Localized<string>;
+  excerpt: Localized<string>;
+  h1: Localized<string>;
+  keywords: Localized<string[]>;
+  faqs: FaqItem[];
+  body: Localized<BlogBlock[]>;
+}
+
 export interface QuotePayload {
   name: string;
   phone: string;
